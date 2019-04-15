@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="dae3-968b-4e3d-e49a" name="Traders" revision="1" battleScribeVersion="2.01" gameSystemId="61f4-2341-ef0d-af6a" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <profiles/>
+  <rules/>
+  <infoLinks/>
+  <costTypes/>
+  <profileTypes/>
+  <categoryEntries/>
+  <forceEntries/>
+  <selectionEntries/>
+  <entryLinks>
+    <entryLink id="da57-f2fe-835b-09ae" name="Arianna" hidden="false" targetId="1d16-ac45-f439-53ce" type="selectionEntry">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+    </entryLink>
+    <entryLink id="0f29-36bc-2221-ec20" name="Jace" hidden="false" targetId="6823-356c-f8c2-1ba8" type="selectionEntry">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+    </entryLink>
+  </entryLinks>
+  <sharedSelectionEntries>
+    <selectionEntry id="1d16-ac45-f439-53ce" name="Arianna" hidden="false" collective="false" type="model">
+      <profiles>
+        <profile id="ea4e-e4fa-3ebb-6a80" name="Arianna" hidden="false" profileTypeId="e328-c1a8-f690-fe86" profileTypeName="Character">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="7125-3397-fdf3-77e8" value="6">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="1d16-ac45-f439-53ce" value="7.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5091-3779-7f57-a0a7" type="greaterThan"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="3b7e-eaba-dc8b-e668" value="5">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="1d16-ac45-f439-53ce" value="7.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5091-3779-7f57-a0a7" type="greaterThan"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="7125-3397-fdf3-77e8" value="7">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="1d16-ac45-f439-53ce" value="12.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5091-3779-7f57-a0a7" type="greaterThan"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="1624-9617-0b29-530c" value="3">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="1d16-ac45-f439-53ce" value="12.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5091-3779-7f57-a0a7" type="greaterThan"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="3b7e-eaba-dc8b-e668" value="6">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="1d16-ac45-f439-53ce" value="12.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5091-3779-7f57-a0a7" type="greaterThan"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="Health Points" characteristicTypeId="7125-3397-fdf3-77e8" value="5"/>
+            <characteristic name="Action Points" characteristicTypeId="1624-9617-0b29-530c" value="2"/>
+            <characteristic name="Skill Points" characteristicTypeId="3b7e-eaba-dc8b-e668" value="4"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks>
+        <categoryLink id="9cbb-e0ba-8301-3e83" name="Captain" hidden="false" targetId="9462-acb0-7d03-c785" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="67c7-b68b-4c9e-50dc" name="Career Points" hidden="false" targetId="5091-3779-7f57-a0a7" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b7a-73c3-d692-9e99" type="min"/>
+            <constraint field="selections" scope="parent" value="15.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1584-f88a-7fef-103f" type="max"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="ac73-0ea3-4253-97ac" name="Class" hidden="false" targetId="0bde-6bbd-d2e7-e42d" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="6fbc-e584-a2e8-8df8" name="Skills" hidden="false" targetId="dd9e-a3ce-b156-b1ba" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="c503-c169-dd5f-cf55" name="Reflexes - Level 1" hidden="false" targetId="ff79-4875-a949-35b3" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="080d-98d8-938b-b315" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="93a7-f43f-248e-c613" type="min"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" costTypeId="b156-7aff-295b-3d4d" value="57.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6823-356c-f8c2-1ba8" name="Jace" hidden="false" collective="false" type="model">
+      <profiles>
+        <profile id="a048-3fe0-2db7-6ebd" name="Jace" hidden="false" profileTypeId="e328-c1a8-f690-fe86" profileTypeName="Character">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="7125-3397-fdf3-77e8" value="6">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="6823-356c-f8c2-1ba8" value="7.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5091-3779-7f57-a0a7" type="greaterThan"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="3b7e-eaba-dc8b-e668" value="4">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="6823-356c-f8c2-1ba8" value="7.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5091-3779-7f57-a0a7" type="greaterThan"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="3b7e-eaba-dc8b-e668" value="5">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="6823-356c-f8c2-1ba8" value="12.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5091-3779-7f57-a0a7" type="greaterThan"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="7125-3397-fdf3-77e8" value="7">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="12.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5091-3779-7f57-a0a7" type="greaterThan"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="1624-9617-0b29-530c" value="3">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="6823-356c-f8c2-1ba8" value="12.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5091-3779-7f57-a0a7" type="greaterThan"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="Health Points" characteristicTypeId="7125-3397-fdf3-77e8" value="5"/>
+            <characteristic name="Action Points" characteristicTypeId="1624-9617-0b29-530c" value="2"/>
+            <characteristic name="Skill Points" characteristicTypeId="3b7e-eaba-dc8b-e668" value="3"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks>
+        <categoryLink id="ccce-a104-ae5d-9b72" name="New CategoryLink" hidden="false" targetId="9462-acb0-7d03-c785" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="d8cf-c109-0db3-c1fe" name="Career Points" hidden="false" targetId="5091-3779-7f57-a0a7" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a511-09e4-8bfa-11e9" type="min"/>
+            <constraint field="selections" scope="parent" value="15.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4662-a640-6643-dd33" type="max"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="2d50-0639-30ac-d7c0" name="Class" hidden="false" targetId="0bde-6bbd-d2e7-e42d" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="eb39-cf4b-e639-dd2d" name="Skills" hidden="false" targetId="dd9e-a3ce-b156-b1ba" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="6539-aae3-f595-d5ee" name="Counter Shot - Level 1" hidden="false" targetId="83a3-d542-6ade-9d91" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e48-0c8e-0b89-3ac8" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="feda-61b8-c0ac-f948" type="max"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" costTypeId="b156-7aff-295b-3d4d" value="57.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedSelectionEntryGroups/>
+  <sharedRules/>
+  <sharedProfiles/>
+</catalogue>
