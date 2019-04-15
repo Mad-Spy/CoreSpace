@@ -131,6 +131,13 @@
       <modifiers/>
       <constraints/>
     </categoryEntry>
+    <categoryEntry id="5341-d956-6797-80e9" name="Ship" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="e0ce-541b-d0f2-573b" name="Crew" hidden="false">
@@ -158,6 +165,13 @@
           <constraints>
             <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f7b2-704f-7a68-5564" type="max"/>
           </constraints>
+        </categoryLink>
+        <categoryLink id="68ec-85e8-c446-31c4" name="Ship" hidden="false" targetId="5341-d956-6797-80e9" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
         </categoryLink>
       </categoryLinks>
     </forceEntry>
@@ -543,6 +557,18 @@
           </conditions>
           <conditionGroups/>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c253-0c50-c981-1e59" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b7bf-9cd2-273a-f8b9" type="max"/>
@@ -825,6 +851,13 @@
           </conditions>
           <conditionGroups/>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c3a8-3646-d0cf-bd42" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c310-dcfe-5807-95a5" type="max"/>
@@ -979,6 +1012,13 @@
           </conditions>
           <conditionGroups/>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d81-35b3-3780-3d43" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5728-34a3-646f-efd9" type="max"/>
@@ -1010,6 +1050,25 @@
           <repeats/>
           <conditions>
             <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7827-1bee-b3f2-f4c0" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a263-9148-81b0-815a" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d81-35b3-3780-3d43" type="equalTo"/>
           </conditions>
           <conditionGroups/>
         </modifier>
@@ -1483,6 +1542,13 @@
           </conditions>
           <conditionGroups/>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d81-35b3-3780-3d43" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab5b-0e6c-8445-7153" type="max"/>
@@ -1858,6 +1924,18 @@
             <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8385-3abe-c000-b018" type="equalTo"/>
           </conditions>
           <conditionGroups/>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a263-9148-81b0-815a" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
@@ -2235,6 +2313,13 @@
           </conditions>
           <conditionGroups/>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2d0a-48f2-527a-2776" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b943-0a0b-4275-33bf" type="max"/>
@@ -2423,6 +2508,18 @@
           </conditions>
           <conditionGroups/>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a263-9148-81b0-815a" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e510-a108-8a47-df86" type="max"/>
@@ -2457,7 +2554,9 @@
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name=" Points" costTypeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="fc59-91d5-4c78-d8ed" name="Accelerate - Level 2" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -2489,7 +2588,9 @@
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name=" Points" costTypeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="1c36-2745-e242-951d" name="Accelerate - Level 3" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -2513,6 +2614,13 @@
           </conditions>
           <conditionGroups/>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ecdc-135b-ec82-aa01" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fe7d-d957-2930-a7f3" type="max"/>
@@ -2521,7 +2629,9 @@
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name=" Points" costTypeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="71e1-241e-9684-28bb" name="Blast - Level 1" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -2545,7 +2655,9 @@
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name=" Points" costTypeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="3e59-1043-b309-00ca" name="Blast - Level 2" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -2577,7 +2689,9 @@
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name=" Points" costTypeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="affc-c3ce-bfad-611c" name="Blast - Level 3" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -2609,7 +2723,9 @@
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name=" Points" costTypeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="18ee-64a9-20d3-0d59" name="Manipulate - Level 1" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -2633,7 +2749,9 @@
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name=" Points" costTypeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="b14f-6457-13b7-8e9f" name="Manipulate - Level 2" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -2665,7 +2783,9 @@
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name=" Points" costTypeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="0ae4-5c24-683a-05d8" name="Manipulate - Level 3" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -2697,7 +2817,9 @@
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name=" Points" costTypeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="9939-1c71-571a-1624" name="Energise - Level 1" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -2721,7 +2843,9 @@
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name=" Points" costTypeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="5566-a2a5-23d1-2fe1" name="Energise - Level 2" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -2753,7 +2877,9 @@
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name=" Points" costTypeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="1176-a414-0e23-d845" name="Energise - Level 3" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -2785,7 +2911,9 @@
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name=" Points" costTypeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="98c7-1c61-c14c-8927" name="Reroute - Level 1" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -2809,7 +2937,9 @@
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name=" Points" costTypeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="79e4-3591-8893-709a" name="Reroute - Level 2" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -2841,7 +2971,9 @@
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name=" Points" costTypeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="953a-f555-ea7e-d0c3" name="Reroute - Level 3" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -2873,7 +3005,9 @@
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name=" Points" costTypeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="3b6c-c4db-b323-239b" name="Scanners - Level 1" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -2897,7 +3031,9 @@
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name=" Points" costTypeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="3b5c-d62f-f734-f6b5" name="Scanners - Level 2" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -2929,7 +3065,9 @@
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name=" Points" costTypeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="da90-afb8-b48e-4787" name="Scanners - Level 3" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -2961,9 +3099,11 @@
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name=" Points" costTypeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
-    <selectionEntry id="782e-03ef-45f2-9f67" name="Bodyguard Protocols - Level 1" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="782e-03ef-45f2-9f67" name="Bodyguard Protocol - Level 1" hidden="false" collective="false" type="upgrade">
       <profiles>
         <profile id="107c-7043-6e8d-8689" name="Bodyguard Protocols - Level 1" hidden="false" profileTypeId="182e-3044-a967-df46" profileTypeName="Machine Skills">
           <profiles/>
@@ -2985,9 +3125,11 @@
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name=" Points" costTypeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
-    <selectionEntry id="6da4-1233-84c6-1321" name="Bodyguard Protocols - Level 2" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="6da4-1233-84c6-1321" name="Bodyguard Protocol - Level 2" hidden="false" collective="false" type="upgrade">
       <profiles>
         <profile id="f856-48e8-c8c2-aa18" name="Bodyguard Protocols - Level 2" hidden="false" profileTypeId="182e-3044-a967-df46" profileTypeName="Machine Skills">
           <profiles/>
@@ -3017,9 +3159,11 @@
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name=" Points" costTypeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
-    <selectionEntry id="395d-b3ad-5b77-f44a" name="Bodyguard Protocols - Level 3" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="395d-b3ad-5b77-f44a" name="Bodyguard Protocol - Level 3" hidden="false" collective="false" type="upgrade">
       <profiles>
         <profile id="16f1-4437-67b1-ff86" name="Bodyguard Protocols - Level 3" hidden="false" profileTypeId="182e-3044-a967-df46" profileTypeName="Machine Skills">
           <profiles/>
@@ -3049,7 +3193,9 @@
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name=" Points" costTypeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="0e5b-1ac8-dfd6-6f0e" name="Repair - Level 1" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -3073,7 +3219,9 @@
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name=" Points" costTypeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="747b-020d-9756-c98c" name="Repair - Level 2" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -3105,7 +3253,9 @@
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name=" Points" costTypeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="0427-3ab2-dd58-bfe7" name="Repair - Level 3" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -3137,7 +3287,9 @@
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name=" Points" costTypeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="753d-e509-c27c-3744" name="Overdrive - Level 1" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -3161,7 +3313,9 @@
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name=" Points" costTypeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="58c1-889d-ae4f-3774" name="Overdrive - Level 2" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -3193,7 +3347,9 @@
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name=" Points" costTypeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="5f91-7124-fda5-f205" name="Overdrive - Level 3" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -3203,8 +3359,7 @@
           <infoLinks/>
           <modifiers/>
           <characteristics>
-            <characteristic name="Action" characteristicTypeId="0e61-b3a5-5730-5e1b" value="You overload your power cells and self-destruct. Make a ranged attack against each character within short range with 5 combat dice. Make a ranged attack against each character in medium range with 2 combat dice. After resolving the attacks roll the Chance Die: 1-2: Every part of you and your equipment is destroyed. This character is no more and is removed from the campaign permanently. 3-4: Every part of you is destroyed and this character is no more, as above. However, each of your equipment tokens is scattered from the point where you stood. This equipment is broken, but can be Repaired. -6: Every part of your body and your equipment is destroyed, but remarkably your AI chip-set is intact. Take the Objective token and
-scatter it from the point where you stood. The character can be restored in the Trade Phase as described on page 138."/>
+            <characteristic name="Action" characteristicTypeId="0e61-b3a5-5730-5e1b" value="You overload your power cells and self-destruct. Make a ranged attack against each character within short range with 5 combat dice. Make a ranged attack against each character in medium range with 2 combat dice. After resolving the attacks roll the Chance Die: 1-2: Every part of you and your equipment is destroyed. This character is no more and is removed from the campaign permanently. 3-4: Every part of you is destroyed and this character is no more, as above. However, each of your equipment tokens is scattered from the point where you stood. This equipment is broken, but can be Repaired. -6: Every part of your body and your equipment is destroyed, but remarkably your AI chip-set is intact. Take the Objective token and scatter it from the point where you stood. The character can be restored in the Trade Phase as described on page 138."/>
           </characteristics>
         </profile>
       </profiles>
@@ -3226,7 +3381,9 @@ scatter it from the point where you stood. The character can be restored in the 
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name=" Points" costTypeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="0b50-a2bf-92dd-23ac" name="Charge - Level 1" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -3250,7 +3407,9 @@ scatter it from the point where you stood. The character can be restored in the 
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name=" Points" costTypeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="2f12-aeb6-4b16-3318" name="Charge - Level 2" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -3282,7 +3441,9 @@ scatter it from the point where you stood. The character can be restored in the 
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name=" Points" costTypeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="5b63-2c4e-d44c-0c56" name="Disconnect - Level 1" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -3306,7 +3467,9 @@ scatter it from the point where you stood. The character can be restored in the 
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name=" Points" costTypeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="045c-9375-4f7e-617b" name="Disconnect - Level 2" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -3338,7 +3501,9 @@ scatter it from the point where you stood. The character can be restored in the 
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name=" Points" costTypeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="882c-5d98-f116-86ce" name="Heel - Level 1" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -3362,7 +3527,9 @@ scatter it from the point where you stood. The character can be restored in the 
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name=" Points" costTypeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="60f2-3bc7-69e2-e463" name="Heel - Level 2" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -3394,7 +3561,9 @@ scatter it from the point where you stood. The character can be restored in the 
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name=" Points" costTypeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="887e-5f6f-ae8f-0684" name="Heel - Level 3" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -3426,7 +3595,9 @@ scatter it from the point where you stood. The character can be restored in the 
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name=" Points" costTypeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="ab05-2c4e-0869-5184" name="Sonic Roar - Level 1" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -3450,7 +3621,9 @@ scatter it from the point where you stood. The character can be restored in the 
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name=" Points" costTypeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="729f-6dbd-a0c3-5de3" name="Sonic Roar - Level 2" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -3482,7 +3655,9 @@ scatter it from the point where you stood. The character can be restored in the 
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name=" Points" costTypeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -3788,7 +3963,24 @@ scatter it from the point where you stood. The character can be restored in the 
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2d81-35b3-3780-3d43" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c3a8-3646-d0cf-bd42" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b435-95cd-23f5-de37" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2d0a-48f2-527a-2776" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ecdc-135b-ec82-aa01" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <constraints/>
           <categoryLinks/>
         </entryLink>
@@ -3796,7 +3988,24 @@ scatter it from the point where you stood. The character can be restored in the 
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2d81-35b3-3780-3d43" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a263-9148-81b0-815a" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b435-95cd-23f5-de37" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2d0a-48f2-527a-2776" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ecdc-135b-ec82-aa01" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <constraints/>
           <categoryLinks/>
         </entryLink>
@@ -3804,7 +4013,22 @@ scatter it from the point where you stood. The character can be restored in the 
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c253-0c50-c981-1e59" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c3a8-3646-d0cf-bd42" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ecdc-135b-ec82-aa01" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <constraints/>
           <categoryLinks/>
         </entryLink>
@@ -3820,6 +4044,8 @@ scatter it from the point where you stood. The character can be restored in the 
                 <conditionGroup type="or">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="44bd-774a-f9c0-c6ab" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b435-95cd-23f5-de37" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ecdc-135b-ec82-aa01" type="equalTo"/>
                   </conditions>
                   <conditionGroups/>
                 </conditionGroup>
@@ -3833,7 +4059,24 @@ scatter it from the point where you stood. The character can be restored in the 
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c253-0c50-c981-1e59" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2d81-35b3-3780-3d43" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c3a8-3646-d0cf-bd42" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2d0a-48f2-527a-2776" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ecdc-135b-ec82-aa01" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <constraints/>
           <categoryLinks/>
         </entryLink>
@@ -3848,7 +4091,10 @@ scatter it from the point where you stood. The character can be restored in the 
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c253-0c50-c981-1e59" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2d81-35b3-3780-3d43" type="equalTo"/>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="44bd-774a-f9c0-c6ab" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ecdc-135b-ec82-aa01" type="equalTo"/>
                   </conditions>
                   <conditionGroups/>
                 </conditionGroup>
@@ -3865,10 +4111,17 @@ scatter it from the point where you stood. The character can be restored in the 
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <repeats/>
-              <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d0a-48f2-527a-2776" type="equalTo"/>
-              </conditions>
-              <conditionGroups/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c3a8-3646-d0cf-bd42" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d0a-48f2-527a-2776" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ecdc-135b-ec82-aa01" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints/>
@@ -3930,6 +4183,7 @@ scatter it from the point where you stood. The character can be restored in the 
                 <conditionGroup type="or">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="44bd-774a-f9c0-c6ab" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a263-9148-81b0-815a" type="equalTo"/>
                   </conditions>
                   <conditionGroups/>
                 </conditionGroup>
@@ -3951,6 +4205,7 @@ scatter it from the point where you stood. The character can be restored in the 
                 <conditionGroup type="or">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="44bd-774a-f9c0-c6ab" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c253-0c50-c981-1e59" type="equalTo"/>
                   </conditions>
                   <conditionGroups/>
                 </conditionGroup>
@@ -3964,7 +4219,20 @@ scatter it from the point where you stood. The character can be restored in the 
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a263-9148-81b0-815a" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <constraints/>
           <categoryLinks/>
         </entryLink>
@@ -3972,7 +4240,20 @@ scatter it from the point where you stood. The character can be restored in the 
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a263-9148-81b0-815a" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <constraints/>
           <categoryLinks/>
         </entryLink>
@@ -4108,6 +4389,7 @@ scatter it from the point where you stood. The character can be restored in the 
                 <conditionGroup type="or">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="44bd-774a-f9c0-c6ab" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c3a8-3646-d0cf-bd42" type="equalTo"/>
                   </conditions>
                   <conditionGroups/>
                 </conditionGroup>
@@ -4121,7 +4403,21 @@ scatter it from the point where you stood. The character can be restored in the 
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c253-0c50-c981-1e59" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c3a8-3646-d0cf-bd42" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <constraints/>
           <categoryLinks/>
         </entryLink>
@@ -4150,7 +4446,21 @@ scatter it from the point where you stood. The character can be restored in the 
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c253-0c50-c981-1e59" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c3a8-3646-d0cf-bd42" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <constraints/>
           <categoryLinks/>
         </entryLink>
@@ -4242,7 +4552,21 @@ scatter it from the point where you stood. The character can be restored in the 
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b435-95cd-23f5-de37" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2d0a-48f2-527a-2776" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <constraints/>
           <categoryLinks/>
         </entryLink>
@@ -4250,7 +4574,23 @@ scatter it from the point where you stood. The character can be restored in the 
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a263-9148-81b0-815a" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2d81-35b3-3780-3d43" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b435-95cd-23f5-de37" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2d0a-48f2-527a-2776" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <constraints/>
           <categoryLinks/>
         </entryLink>
@@ -4261,10 +4601,17 @@ scatter it from the point where you stood. The character can be restored in the 
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <repeats/>
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="44bd-774a-f9c0-c6ab" type="equalTo"/>
-              </conditions>
-              <conditionGroups/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="44bd-774a-f9c0-c6ab" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a263-9148-81b0-815a" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2d81-35b3-3780-3d43" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints/>
@@ -4277,10 +4624,18 @@ scatter it from the point where you stood. The character can be restored in the 
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <repeats/>
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="44bd-774a-f9c0-c6ab" type="equalTo"/>
-              </conditions>
-              <conditionGroups/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a263-9148-81b0-815a" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="44bd-774a-f9c0-c6ab" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2d81-35b3-3780-3d43" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2d0a-48f2-527a-2776" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints/>
@@ -4526,6 +4881,9 @@ scatter it from the point where you stood. The character can be restored in the 
                 <conditionGroup type="or">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="44bd-774a-f9c0-c6ab" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c253-0c50-c981-1e59" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d81-35b3-3780-3d43" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2d0a-48f2-527a-2776" type="equalTo"/>
                   </conditions>
                   <conditionGroups/>
                 </conditionGroup>
@@ -4547,6 +4905,8 @@ scatter it from the point where you stood. The character can be restored in the 
                 <conditionGroup type="or">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="44bd-774a-f9c0-c6ab" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a263-9148-81b0-815a" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2d0a-48f2-527a-2776" type="equalTo"/>
                   </conditions>
                   <conditionGroups/>
                 </conditionGroup>
@@ -4568,6 +4928,9 @@ scatter it from the point where you stood. The character can be restored in the 
                 <conditionGroup type="or">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="44bd-774a-f9c0-c6ab" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c253-0c50-c981-1e59" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a263-9148-81b0-815a" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d81-35b3-3780-3d43" type="equalTo"/>
                   </conditions>
                   <conditionGroups/>
                 </conditionGroup>
@@ -4589,6 +4952,9 @@ scatter it from the point where you stood. The character can be restored in the 
                 <conditionGroup type="or">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="44bd-774a-f9c0-c6ab" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a263-9148-81b0-815a" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d81-35b3-3780-3d43" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2d0a-48f2-527a-2776" type="equalTo"/>
                   </conditions>
                   <conditionGroups/>
                 </conditionGroup>
@@ -4766,6 +5132,7 @@ scatter it from the point where you stood. The character can be restored in the 
                 <conditionGroup type="or">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="44bd-774a-f9c0-c6ab" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a263-9148-81b0-815a" type="equalTo"/>
                   </conditions>
                   <conditionGroups/>
                 </conditionGroup>
@@ -4779,7 +5146,20 @@ scatter it from the point where you stood. The character can be restored in the 
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b435-95cd-23f5-de37" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <constraints/>
           <categoryLinks/>
         </entryLink>
@@ -4795,6 +5175,7 @@ scatter it from the point where you stood. The character can be restored in the 
                 <conditionGroup type="or">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="44bd-774a-f9c0-c6ab" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b435-95cd-23f5-de37" type="equalTo"/>
                   </conditions>
                   <conditionGroups/>
                 </conditionGroup>
@@ -4816,6 +5197,7 @@ scatter it from the point where you stood. The character can be restored in the 
                 <conditionGroup type="or">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="44bd-774a-f9c0-c6ab" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b435-95cd-23f5-de37" type="equalTo"/>
                   </conditions>
                   <conditionGroups/>
                 </conditionGroup>
@@ -4992,7 +5374,8 @@ scatter it from the point where you stood. The character can be restored in the 
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="44bd-774a-f9c0-c6ab" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a263-9148-81b0-815a" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c3a8-3646-d0cf-bd42" type="equalTo"/>
                   </conditions>
                   <conditionGroups/>
                 </conditionGroup>
@@ -5013,7 +5396,9 @@ scatter it from the point where you stood. The character can be restored in the 
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="44bd-774a-f9c0-c6ab" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a263-9148-81b0-815a" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c3a8-3646-d0cf-bd42" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2d0a-48f2-527a-2776" type="equalTo"/>
                   </conditions>
                   <conditionGroups/>
                 </conditionGroup>
@@ -5034,7 +5419,8 @@ scatter it from the point where you stood. The character can be restored in the 
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="44bd-774a-f9c0-c6ab" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a263-9148-81b0-815a" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2d0a-48f2-527a-2776" type="equalTo"/>
                   </conditions>
                   <conditionGroups/>
                 </conditionGroup>
@@ -5055,7 +5441,8 @@ scatter it from the point where you stood. The character can be restored in the 
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="44bd-774a-f9c0-c6ab" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c3a8-3646-d0cf-bd42" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2d0a-48f2-527a-2776" type="equalTo"/>
                   </conditions>
                   <conditionGroups/>
                 </conditionGroup>
@@ -5180,7 +5567,9 @@ scatter it from the point where you stood. The character can be restored in the 
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <constraints/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e02-6550-080c-294f" type="max"/>
+      </constraints>
       <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
@@ -5225,7 +5614,20 @@ scatter it from the point where you stood. The character can be restored in the 
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c3a8-3646-d0cf-bd42" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <constraints/>
           <categoryLinks/>
         </entryLink>
@@ -5233,7 +5635,21 @@ scatter it from the point where you stood. The character can be restored in the 
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c3a8-3646-d0cf-bd42" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ecdc-135b-ec82-aa01" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <constraints/>
           <categoryLinks/>
         </entryLink>
@@ -5241,7 +5657,21 @@ scatter it from the point where you stood. The character can be restored in the 
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c3a8-3646-d0cf-bd42" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ecdc-135b-ec82-aa01" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <constraints/>
           <categoryLinks/>
         </entryLink>
@@ -5249,7 +5679,20 @@ scatter it from the point where you stood. The character can be restored in the 
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ecdc-135b-ec82-aa01" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <constraints/>
           <categoryLinks/>
         </entryLink>
@@ -5385,7 +5828,20 @@ scatter it from the point where you stood. The character can be restored in the 
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c3a8-3646-d0cf-bd42" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <constraints/>
           <categoryLinks/>
         </entryLink>
@@ -5393,7 +5849,20 @@ scatter it from the point where you stood. The character can be restored in the 
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c3a8-3646-d0cf-bd42" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <constraints/>
           <categoryLinks/>
         </entryLink>
