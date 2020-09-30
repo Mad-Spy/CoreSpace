@@ -56,6 +56,11 @@
         <characteristicType id="cbab-a029-e0b8-727d" name="Action"/>
       </characteristicTypes>
     </profileType>
+    <profileType id="93b2-e010-abe2-b912" name="Vocational Skills">
+      <characteristicTypes>
+        <characteristicType id="0126-aa67-a299-8d17" name="Action"/>
+      </characteristicTypes>
+    </profileType>
   </profileTypes>
   <categoryEntries>
     <categoryEntry id="9462-acb0-7d03-c785" name="Captain" hidden="false"/>
@@ -69,6 +74,11 @@
     <categoryEntry id="c3a8-3646-d0cf-bd42" name="Support" hidden="false"/>
     <categoryEntry id="b435-95cd-23f5-de37" name="Tech" hidden="false"/>
     <categoryEntry id="5341-d956-6797-80e9" name="Ship" hidden="false"/>
+    <categoryEntry id="c465-e61c-1a44-a35b" name="Scavenger" hidden="false"/>
+    <categoryEntry id="ebff-ea58-720c-968d" name="Engineer" hidden="false"/>
+    <categoryEntry id="a48f-30d1-0346-165b" name="Management" hidden="false"/>
+    <categoryEntry id="ecdd-6ad2-e374-617e" name="Scientist" hidden="false"/>
+    <categoryEntry id="6e0d-12ca-cfcc-7a87" name="Operations" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="e0ce-541b-d0f2-573b" name="Crew" hidden="false">
@@ -228,7 +238,7 @@
     </selectionEntry>
     <selectionEntry id="ef4c-523e-e675-72a7" name="Marksman - Level 2" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
-        <modifier type="set" field="22d4-d98b-0710-fc3a" value="0">
+        <modifier type="set" field="22d4-d98b-0710-fc3a" value="0.0">
           <conditions>
             <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1a1c-58d6-aabb-119e" type="equalTo"/>
           </conditions>
@@ -2276,6 +2286,58 @@
         <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="e94e-6f81-c2e1-ce7a" name="Negotiation - Level 1" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b464-7de5-c6ea-580e" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="487d-fce8-96ea-7a27" name="Negotiation - Level 1" hidden="false" typeId="93b2-e010-abe2-b912" typeName="Vocational Skills">
+          <characteristics>
+            <characteristic name="Action" typeId="0126-aa67-a299-8d17">Passive: Re-roll one die on any Persuade Roll.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="81fb-0c6b-4229-7ac7" name="Negotiation - Level 2" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="126f-ef9a-ed31-4a77" value="0.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e94e-6f81-c2e1-ce7a" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="126f-ef9a-ed31-4a77" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="ce07-11fd-d117-3ce8" name="Negotiation - Level 2" hidden="false" typeId="93b2-e010-abe2-b912" typeName="Vocational Skills">
+          <characteristics>
+            <characteristic name="Action" typeId="0126-aa67-a299-8d17">Extraction Phase: Use before rolling on the &quot;You&apos;re on Your Own&quot; or Apprehended tables for yourself or any other member of your crew. You may ignore any UA cost associated with the extraction. Any other effects then apply. You then gain a Career Point.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="3fe9-aa37-8f2b-7e40" name="Negotiation - Level 3" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="3843-65ef-f89c-0754" value="0.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="81fb-0c6b-4229-7ac7" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3843-65ef-f89c-0754" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="8bd6-70cc-37de-3e36" name="Negotiation - Level 3" hidden="false" typeId="93b2-e010-abe2-b912" typeName="Vocational Skills">
+          <characteristics>
+            <characteristic name="Action" typeId="0126-aa67-a299-8d17">Use this skill when an enemy Trader Captain is unengaged and in medium fange and LoS. Your crew and the other Captain&apos;s crew treat each other as friendly for the rest of the round - they cannot attack each other and can move through each other&apos;s Traders.
+
+In addition, pick one of your Traders. That Trader cannot attack or be attacked by the other crew until the next Hostility level is reached and can escape via the other crew&apos;s airlock during this time. The other crew will return your Trader at no cost after the game.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="0bde-6bbd-d2e7-e42d" name="Class" hidden="false" collective="false" import="true">
@@ -2342,7 +2404,7 @@
         </selectionEntry>
         <selectionEntry id="80a4-455e-2584-9c34" name="Merg" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="set" field="3bf6-e893-643f-1097" value="1">
+            <modifier type="set" field="3bf6-e893-643f-1097" value="1.0">
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2d81-35b3-3780-3d43" type="instanceOf"/>
               </conditions>
@@ -2379,6 +2441,31 @@
           <costs>
             <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry id="feec-fc8e-9e67-26c8" name="Operations" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="9e9c-80fb-6b3c-031e" name="Operations" hidden="false" targetId="6e0d-12ca-cfcc-7a87" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry id="3f4c-0cdd-0711-143a" name="Management" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="16e6-c449-5da7-699f" name="Management" hidden="false" targetId="a48f-30d1-0346-165b" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry id="a7d6-a0f8-5865-57ab" name="Scavenger" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="a903-862d-0f9f-42e3" name="Scavenger" hidden="false" targetId="c465-e61c-1a44-a35b" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry id="1371-347c-e257-922d" name="Scientist" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="fcb6-925a-e8b5-d6a1" name="Scientist" hidden="false" targetId="ecdd-6ad2-e374-617e" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry id="b85e-4de1-eec2-83c3" name="Engineer" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="1f1b-c892-430d-e0f6" name="Engineer" hidden="false" targetId="ebff-ea58-720c-968d" primary="false"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
@@ -2539,6 +2626,20 @@
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d81-35b3-3780-3d43" type="equalTo"/>
               </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="c558-00ec-b090-9ccd" name="Vocational Skills" hidden="false" collective="false" import="true" targetId="59b7-0d7d-cca1-9ff4" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a48f-30d1-0346-165b" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6e0d-12ca-cfcc-7a87" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </entryLink>
@@ -3262,6 +3363,18 @@
       <entryLinks>
         <entryLink id="7be1-1f48-2fe7-e8a3" name="Sonic Roar - Level 1" hidden="false" collective="false" import="true" targetId="ab05-2c4e-0869-5184" type="selectionEntry"/>
         <entryLink id="d5b4-72c6-9c82-eb02" name="Sonic Roar - Level 2" hidden="false" collective="false" import="true" targetId="729f-6dbd-a0c3-5de3" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="8e85-7e2c-24ea-bab8" name="Negotiation" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="6e5f-1f21-932d-58ea" name="Negotiation - Level 2" hidden="false" collective="false" import="true" targetId="81fb-0c6b-4229-7ac7" type="selectionEntry"/>
+        <entryLink id="b1c4-8eaa-38d3-130e" name="Negotiation - Level 3" hidden="false" collective="false" import="true" targetId="3fe9-aa37-8f2b-7e40" type="selectionEntry"/>
+        <entryLink id="9449-c296-44c6-1213" name="Negotiation - Level 1" hidden="false" collective="false" import="true" targetId="e94e-6f81-c2e1-ce7a" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="59b7-0d7d-cca1-9ff4" name="Vocational Skills" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="a89b-3098-3ac1-8e36" name="Negotiation" hidden="false" collective="false" import="true" targetId="8e85-7e2c-24ea-bab8" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
