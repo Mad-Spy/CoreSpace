@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="dae3-968b-4e3d-e49a" name="Traders" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="61f4-2341-ef0d-af6a" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="dae3-968b-4e3d-e49a" name="Traders" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="61f4-2341-ef0d-af6a" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="da57-f2fe-835b-09ae" name="Arianna" hidden="false" collective="false" import="true" targetId="1d16-ac45-f439-53ce" type="selectionEntry"/>
     <entryLink id="0f29-36bc-2221-ec20" name="Jace" hidden="false" collective="false" import="true" targetId="6823-356c-f8c2-1ba8" type="selectionEntry"/>
@@ -33,6 +33,8 @@
     <entryLink id="0676-fe28-4a93-a052" name="Hunter" hidden="false" collective="false" import="true" targetId="e4eb-b18d-9cbe-a8d0" type="selectionEntry"/>
     <entryLink id="aa37-c568-62e0-9067" name="Satiene" hidden="false" collective="false" import="true" targetId="0532-a1f5-271e-81cc" type="selectionEntry"/>
     <entryLink id="5199-a150-a536-f13d" name="Chit&apos;Chit&apos;Ah" hidden="false" collective="false" import="true" targetId="e5f1-db03-984a-5534" type="selectionEntry"/>
+    <entryLink id="cc07-19a0-922b-be7d" name="Molly" hidden="false" collective="false" import="true" targetId="2d22-9445-53f9-87f2" type="selectionEntry"/>
+    <entryLink id="342a-0fc3-d2e6-e715" name="Salazar" hidden="false" collective="false" import="true" targetId="9ece-2b6e-bb53-3cae" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="1d16-ac45-f439-53ce" name="Arianna" hidden="false" collective="false" import="true" type="model">
@@ -856,7 +858,7 @@
         <entryLink id="10b6-46b0-36c9-1a94" name="Wearing Armour" hidden="false" collective="false" import="true" targetId="5f48-3e46-3bce-ed7b" type="selectionEntry"/>
         <entryLink id="4b03-524d-cfc2-bb52" name="Impervious - Level 1" hidden="false" collective="false" import="true" targetId="d3bf-e9cc-7700-6977" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="hidden" value="true">
+            <modifier type="set" field="2b7a-b3a6-68ea-4174" value="0.0">
               <conditions>
                 <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="10b6-46b0-36c9-1a94" type="equalTo"/>
               </conditions>
@@ -1178,7 +1180,7 @@
         <entryLink id="9623-75e0-f636-49a8" name="Wearing Armour" hidden="false" collective="false" import="true" targetId="5f48-3e46-3bce-ed7b" type="selectionEntry"/>
         <entryLink id="1773-53a0-f783-7492" name="Disrupt - Level 1" hidden="false" collective="false" import="true" targetId="e594-0d67-8239-a702" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="hidden" value="true">
+            <modifier type="set" field="0867-b53c-5022-0aa7" value="0.0">
               <conditions>
                 <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="10b6-46b0-36c9-1a94" type="equalTo"/>
               </conditions>
@@ -1599,7 +1601,7 @@
         </entryLink>
         <entryLink id="4aab-d0e4-181f-2e5b" name="Evade - Level 1" hidden="false" collective="false" import="true" targetId="f002-7b30-4f96-b8ee" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="hidden" value="true">
+            <modifier type="set" field="3d05-99c4-5b15-2429" value="0.0">
               <conditions>
                 <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="10b6-46b0-36c9-1a94" type="equalTo"/>
               </conditions>
@@ -1692,7 +1694,7 @@
         <entryLink id="9528-1c77-e79f-1143" name="Class" hidden="false" collective="false" import="true" targetId="0bde-6bbd-d2e7-e42d" type="selectionEntryGroup"/>
         <entryLink id="9488-0ea7-a928-98b4" name="Kata - Level 1" hidden="false" collective="false" import="true" targetId="d1c8-466c-0988-352f" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="hidden" value="true">
+            <modifier type="set" field="a277-2848-973d-5b72" value="0.0">
               <conditions>
                 <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="10b6-46b0-36c9-1a94" type="equalTo"/>
               </conditions>
@@ -1891,7 +1893,7 @@
         </entryLink>
         <entryLink id="514e-416d-fd92-2c0f" name="Distraction - Level 1" hidden="false" collective="false" import="true" targetId="7bd0-b9b8-8a92-2094" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="hidden" value="true">
+            <modifier type="set" field="0df8-2f83-35ac-8fbb" value="0.0">
               <conditions>
                 <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="10b6-46b0-36c9-1a94" type="equalTo"/>
               </conditions>
@@ -1969,7 +1971,7 @@
       <entryLinks>
         <entryLink id="770c-aa38-188c-bac6" name="Camouflage - Level 1" hidden="false" collective="false" import="true" targetId="cfba-5142-4e11-f74f" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="hidden" value="true">
+            <modifier type="set" field="9bba-ce54-39c0-2ffc" value="0.0">
               <conditions>
                 <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="10b6-46b0-36c9-1a94" type="equalTo"/>
               </conditions>
@@ -2064,7 +2066,7 @@
         <entryLink id="49a6-c81c-1175-30f2" name="Skills" hidden="false" collective="false" import="true" targetId="dd9e-a3ce-b156-b1ba" type="selectionEntryGroup"/>
         <entryLink id="9855-c23d-37d8-65ff" name="Reflexes - Level 1" hidden="false" collective="false" import="true" targetId="ff79-4875-a949-35b3" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="hidden" value="true">
+            <modifier type="set" field="d885-fe5b-8300-d4f6" value="0.0">
               <conditions>
                 <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="10b6-46b0-36c9-1a94" type="equalTo"/>
               </conditions>
@@ -2153,7 +2155,7 @@
         <entryLink id="673f-265f-cbc8-c9bc" name="Wearing Armour" hidden="false" collective="false" import="true" targetId="5f48-3e46-3bce-ed7b" type="selectionEntry"/>
         <entryLink id="a210-e67f-8123-3832" name="Stubborn - Level 1" hidden="false" collective="false" import="true" targetId="dbb2-b3a2-c386-eafc" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="hidden" value="true">
+            <modifier type="set" field="6d7b-5288-82f3-a6a8" value="0.0">
               <conditions>
                 <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="10b6-46b0-36c9-1a94" type="equalTo"/>
               </conditions>
@@ -2322,7 +2324,7 @@
         </entryLink>
         <entryLink id="0337-7030-385c-16c0" name="Camouflage - Level 1" hidden="false" collective="false" import="true" targetId="cfba-5142-4e11-f74f" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="hidden" value="true">
+            <modifier type="set" field="e571-a8d3-1b72-92b4" value="0.0">
               <conditions>
                 <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="10b6-46b0-36c9-1a94" type="equalTo"/>
               </conditions>
@@ -2406,6 +2408,159 @@
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="50.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2d22-9445-53f9-87f2" name="Molly" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="b368-ddb7-471e-cf93" name="Molly" hidden="false" typeId="e328-c1a8-f690-fe86" typeName="Character">
+          <modifiers>
+            <modifier type="increment" field="3b7e-eaba-dc8b-e668" value="1">
+              <conditions>
+                <condition field="selections" scope="2d22-9445-53f9-87f2" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5091-3779-7f57-a0a7" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="3b7e-eaba-dc8b-e668" value="1">
+              <conditions>
+                <condition field="selections" scope="2d22-9445-53f9-87f2" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5091-3779-7f57-a0a7" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="7125-3397-fdf3-77e8" value="1">
+              <conditions>
+                <condition field="selections" scope="2d22-9445-53f9-87f2" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5091-3779-7f57-a0a7" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="1624-9617-0b29-530c" value="1">
+              <conditions>
+                <condition field="selections" scope="2d22-9445-53f9-87f2" value="14.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5091-3779-7f57-a0a7" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="3b7e-eaba-dc8b-e668" value="1">
+              <conditions>
+                <condition field="selections" scope="2d22-9445-53f9-87f2" value="14.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5091-3779-7f57-a0a7" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="Health Points" typeId="7125-3397-fdf3-77e8">4</characteristic>
+            <characteristic name="Action Points" typeId="1624-9617-0b29-530c">2</characteristic>
+            <characteristic name="Skill Points" typeId="3b7e-eaba-dc8b-e668">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="d068-4f65-df4e-d993" name="New CategoryLink" hidden="false" targetId="173c-b6e6-b181-3f61" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="6c7a-e267-17f5-cbe5" name="Skills" hidden="false" collective="false" import="true" targetId="dd9e-a3ce-b156-b1ba" type="selectionEntryGroup"/>
+        <entryLink id="8c54-ee71-69b4-c88b" name="Class" hidden="false" collective="false" import="true" targetId="0bde-6bbd-d2e7-e42d" type="selectionEntryGroup"/>
+        <entryLink id="8d9a-419d-68fd-f32a" name="Career Points" hidden="false" collective="false" import="true" targetId="5091-3779-7f57-a0a7" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f659-b894-a2f4-763f" type="min"/>
+            <constraint field="selections" scope="parent" value="14.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="15ff-97b0-ff86-d305" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="f36e-e100-7ae4-687d" name="Marksman - Level 1" hidden="false" collective="false" import="true" targetId="1a1c-58d6-aabb-119e" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e801-58d8-718b-d694" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="649e-b183-8b64-517b" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="3587-4001-fab9-ad54" name="Wearing Armour" hidden="false" collective="false" import="true" targetId="5f48-3e46-3bce-ed7b" type="selectionEntry"/>
+        <entryLink id="8b5c-5b93-7fbb-5ebc" name="Walk It Off - Level 1" hidden="false" collective="false" import="true" targetId="4555-f728-88d9-5503" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="6a69-0626-3cf1-fedd" value="0.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="10b6-46b0-36c9-1a94" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="ea2d-b2fe-b0cb-8f1c" value="0.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="10b6-46b0-36c9-1a94" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a69-0626-3cf1-fedd" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea2d-b2fe-b0cb-8f1c" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="50.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9ece-2b6e-bb53-3cae" name="Salazar" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="03ca-93dd-7083-a639" name="Salazar" hidden="false" typeId="e328-c1a8-f690-fe86" typeName="Character">
+          <modifiers>
+            <modifier type="increment" field="3b7e-eaba-dc8b-e668" value="1">
+              <conditions>
+                <condition field="selections" scope="9ece-2b6e-bb53-3cae" value="13.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5091-3779-7f57-a0a7" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="7125-3397-fdf3-77e8" value="1">
+              <conditions>
+                <condition field="selections" scope="9ece-2b6e-bb53-3cae" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5091-3779-7f57-a0a7" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="3b7e-eaba-dc8b-e668" value="1">
+              <conditions>
+                <condition field="selections" scope="9ece-2b6e-bb53-3cae" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5091-3779-7f57-a0a7" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="3b7e-eaba-dc8b-e668" value="1">
+              <conditions>
+                <condition field="selections" scope="9ece-2b6e-bb53-3cae" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5091-3779-7f57-a0a7" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="Health Points" typeId="7125-3397-fdf3-77e8">4</characteristic>
+            <characteristic name="Action Points" typeId="1624-9617-0b29-530c">2</characteristic>
+            <characteristic name="Skill Points" typeId="3b7e-eaba-dc8b-e668">2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="1ad2-ae63-ec8f-91c8" name="New CategoryLink" hidden="false" targetId="173c-b6e6-b181-3f61" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="2a4d-e295-09df-9ed2" name="Career Points" hidden="false" collective="false" import="true" targetId="5091-3779-7f57-a0a7" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1144-82e5-c3a4-b4af" type="min"/>
+            <constraint field="selections" scope="parent" value="13.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b724-c628-06a6-eb65" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="a88f-e9af-3d84-c267" name="Wearing Armour" hidden="false" collective="false" import="true" targetId="5f48-3e46-3bce-ed7b" type="selectionEntry"/>
+        <entryLink id="2efb-dea0-8eef-3464" name="Class" hidden="false" collective="false" import="true" targetId="0bde-6bbd-d2e7-e42d" type="selectionEntryGroup"/>
+        <entryLink id="e664-8dd0-f95c-cbb0" name="Skills" hidden="false" collective="false" import="true" targetId="dd9e-a3ce-b156-b1ba" type="selectionEntryGroup"/>
+        <entryLink id="b343-cc12-12cc-f79e" name="Light Fingers - Level 1" hidden="false" collective="false" import="true" targetId="48f8-f33a-1d49-aed0" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="26f7-908a-6024-a09c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec01-ddce-7629-2bf5" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="b914-0c77-ba73-eb63" name="Distraction - Level 1" hidden="false" collective="false" import="true" targetId="7bd0-b9b8-8a92-2094" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="fbab-4520-ccda-6880" value="0.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="10b6-46b0-36c9-1a94" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="4a8d-fac7-7e8c-321d" value="0.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="10b6-46b0-36c9-1a94" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a8d-fac7-7e8c-321d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fbab-4520-ccda-6880" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="49.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
