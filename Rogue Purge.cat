@@ -144,6 +144,9 @@
           <constraints>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="918b-290d-a182-f864" type="max"/>
           </constraints>
+          <costs>
+            <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -548,6 +551,9 @@
           <constraints>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8971-e584-4b65-9300" type="max"/>
           </constraints>
+          <costs>
+            <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -665,6 +671,9 @@
           <constraints>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce0b-7bc6-e19d-edd0" type="max"/>
           </constraints>
+          <costs>
+            <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -792,8 +801,16 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b777-cd6d-7f95-ff83" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="8dc7-65df-edb0-b667" name="Live One A (Crafting)" hidden="false" collective="false" import="true" type="upgrade"/>
-            <selectionEntry id="8cfa-edd5-93b9-1428" name="Live One B (Marksman)" hidden="false" collective="false" import="true" type="upgrade"/>
+            <selectionEntry id="8dc7-65df-edb0-b667" name="Live One A (Crafting)" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="8cfa-edd5-93b9-1428" name="Live One B (Marksman)" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="e22f-2316-bb6d-1a7c" name="Live One Skills" hidden="false" collective="false" import="true">
@@ -951,11 +968,17 @@
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b07a-e527-2561-e922" type="max"/>
               </constraints>
+              <costs>
+                <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="0e74-8f5b-2ac1-82c5" name="Skill Increase" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d386-739c-edf0-9394" type="max"/>
               </constraints>
+              <costs>
+                <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -1071,6 +1094,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="7e0d-45e2-d241-2406" name="One of Us - Level 2" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
@@ -1090,6 +1116,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="ff19-c118-b2e7-3aab" name="One of Us - Level 3" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
@@ -1109,9 +1138,20 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
-    <selectionEntry id="6c03-8c74-96e7-a35b" name="Devastator A (Counter Shot, Repair)" hidden="false" collective="false" import="true" type="upgrade"/>
-    <selectionEntry id="8302-4b28-1468-3525" name="Devastator B (Marksman, Energise)" hidden="false" collective="false" import="true" type="upgrade"/>
+    <selectionEntry id="6c03-8c74-96e7-a35b" name="Devastator A (Counter Shot, Repair)" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8302-4b28-1468-3525" name="Devastator B (Marksman, Energise)" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
+    </selectionEntry>
     <selectionEntry id="652c-6bc3-ca01-08ca" name="You Belong to Me Now - Level 1" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e00e-a93d-fd26-9fff" type="max"/>
@@ -1123,6 +1163,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="93f5-16ef-0c7d-c10e" name="You Belong to Me Now - Level 2" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
@@ -1142,6 +1185,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="f0c0-6d4e-e6d0-5e38" name="You Belong to Me Now - Level 3" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
@@ -1161,6 +1207,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="be3a-bc10-624a-ef87" name="Hologram - Level 1" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -1173,6 +1222,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="a0ee-8249-b554-45b5" name="Hologram - Level 2" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
@@ -1192,6 +1244,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="c749-0b4f-ce99-7695" name="Hologram - Level 3" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
@@ -1211,6 +1266,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="f38b-1cec-77a3-3e96" name="Gravitonic Burst - Level 1" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -1223,6 +1281,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="4b99-9d5b-869a-1570" name="Gravitonic Burst - Level 2" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
@@ -1242,6 +1303,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="bba2-cf43-6ac6-2f01" name="Gravitonic Burst - Level 3" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
@@ -1263,6 +1327,9 @@ Make a ranged attack with two dice that targets all non-Purge characters within 
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="8d39-5e5c-d5ba-ce78" name="Analyse - Level 1" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -1275,6 +1342,9 @@ Make a ranged attack with two dice that targets all non-Purge characters within 
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="94b1-24ce-8d11-c017" name="Analyse - Level 2" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
@@ -1294,6 +1364,9 @@ Make a ranged attack with two dice that targets all non-Purge characters within 
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="dcf8-290b-fb68-8200" name="Analyse - Level 3" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
@@ -1313,6 +1386,9 @@ Make a ranged attack with two dice that targets all non-Purge characters within 
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="fe82-9d06-cc22-6e70" name="Energy Drain - Level 1" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -1325,6 +1401,9 @@ Make a ranged attack with two dice that targets all non-Purge characters within 
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="a31c-93e6-61d3-f5f3" name="Energy Drain - Level 2" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
@@ -1344,6 +1423,9 @@ Make a ranged attack with two dice that targets all non-Purge characters within 
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="0ddd-1131-ec02-ce93" name="Energy Drain - Level 3" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
@@ -1364,6 +1446,9 @@ Alternatively, use as a standard Skill - as Level 2, but attack with five dice a
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="9f95-0df4-23b3-a25e" name="Hive Mind - Level 1" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -1376,6 +1461,9 @@ Alternatively, use as a standard Skill - as Level 2, but attack with five dice a
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="239c-0c37-a009-bbad" name="Hive Mind - Level 2" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
@@ -1395,6 +1483,9 @@ Alternatively, use as a standard Skill - as Level 2, but attack with five dice a
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="7abf-f0f6-5a69-fcf9" name="Hive Mind - Level 3" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
@@ -1414,6 +1505,9 @@ Alternatively, use as a standard Skill - as Level 2, but attack with five dice a
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="d8d8-af4c-6d7e-f4bb" name="Raw Blue - Level 1" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -1426,6 +1520,9 @@ Alternatively, use as a standard Skill - as Level 2, but attack with five dice a
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="f918-0efc-a902-7841" name="Raw Blue - Level 2" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
@@ -1445,6 +1542,9 @@ Alternatively, use as a standard Skill - as Level 2, but attack with five dice a
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="442b-aaa1-0712-12cf" name="Raw Blue - Level 3" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
@@ -1464,8 +1564,15 @@ Alternatively, use as a standard Skill - as Level 2, but attack with five dice a
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
-    <selectionEntry id="91f7-51ac-8e3e-993c" name="Devastator C (Assimilate, Sure Shot)" hidden="false" collective="false" import="true" type="upgrade"/>
+    <selectionEntry id="91f7-51ac-8e3e-993c" name="Devastator C (Assimilate, Sure Shot)" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
+    </selectionEntry>
     <selectionEntry id="517a-6741-be49-1fee" name="Assimilate Biomass - Level 1" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="73fe-7b93-8d2f-0aa4" type="max"/>
@@ -1477,6 +1584,9 @@ Alternatively, use as a standard Skill - as Level 2, but attack with five dice a
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="e605-8332-14f8-ef90" name="Assimilate Biomass - Level 2" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
@@ -1496,6 +1606,9 @@ Alternatively, use as a standard Skill - as Level 2, but attack with five dice a
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="cc87-b755-5ae5-f7cc" name="Assimilate Biomass - Level 3" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
@@ -1515,14 +1628,45 @@ Alternatively, use as a standard Skill - as Level 2, but attack with five dice a
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
-    <selectionEntry id="b997-84b5-99e2-567f" name="Harvester A (Scanners, Repair)" hidden="false" collective="false" import="true" type="upgrade"/>
-    <selectionEntry id="3fcc-7b09-6fc5-82cf" name="Harvester B (Assist, Hack)" hidden="false" collective="false" import="true" type="upgrade"/>
-    <selectionEntry id="273e-4a56-7793-7b40" name="Harvester C (Assimilate, Scanners)" hidden="false" collective="false" import="true" type="upgrade"/>
-    <selectionEntry id="3b70-5fcb-ae6d-346b" name="Harvester D (Overdrive, Reroute)" hidden="false" collective="false" import="true" type="upgrade"/>
-    <selectionEntry id="6537-eb29-5307-5b00" name="Harvester E (Reflexes, Reroute)" hidden="false" collective="false" import="true" type="upgrade"/>
-    <selectionEntry id="53ec-c2c0-3a35-00ab" name="Assassin A (Reflexes, Repair)" hidden="false" collective="false" import="true" type="upgrade"/>
-    <selectionEntry id="00f1-2d55-d811-98ff" name="Assassin B (Crafting, Assimilate)" hidden="false" collective="false" import="true" type="upgrade"/>
+    <selectionEntry id="b997-84b5-99e2-567f" name="Harvester A (Scanners, Repair)" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3fcc-7b09-6fc5-82cf" name="Harvester B (Assist, Hack)" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="273e-4a56-7793-7b40" name="Harvester C (Assimilate, Scanners)" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3b70-5fcb-ae6d-346b" name="Harvester D (Overdrive, Reroute)" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6537-eb29-5307-5b00" name="Harvester E (Reflexes, Reroute)" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="53ec-c2c0-3a35-00ab" name="Assassin A (Reflexes, Repair)" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="00f1-2d55-d811-98ff" name="Assassin B (Crafting, Assimilate)" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
+    </selectionEntry>
     <selectionEntry id="0a24-6279-5317-3193" name="Crafting - Level 1" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="086d-3379-7f04-4cf4" type="max"/>
@@ -1534,6 +1678,9 @@ Alternatively, use as a standard Skill - as Level 2, but attack with five dice a
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="5b67-c5db-adee-4722" name="Crafting - Level 2" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
@@ -1553,16 +1700,26 @@ Alternatively, use as a standard Skill - as Level 2, but attack with five dice a
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
-    <selectionEntry id="3c16-3fb6-5054-9f4b" name="Assassin C (Impervious, Camouflage)" hidden="false" collective="false" import="true" type="upgrade"/>
+    <selectionEntry id="3c16-3fb6-5054-9f4b" name="Assassin C (Impervious, Camouflage)" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
+    </selectionEntry>
     <selectionEntry id="bbdc-e18c-4793-a7de" name="Carrying/Wearing Armour" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c41c-23c4-e2b6-a7b6" type="max"/>
       </constraints>
+      <costs>
+        <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
-    <selectionEntryGroup id="5602-156a-3028-d11e" name="Harvester Skills" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="5602-156a-3028-d11e" name="Skills - Harvester" hidden="false" collective="false" import="true">
       <modifiers>
         <modifier type="increment" field="bf53-8aee-938c-b721" value="1.0">
           <repeats>
@@ -1849,7 +2006,7 @@ Alternatively, use as a standard Skill - as Level 2, but attack with five dice a
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
-    <selectionEntryGroup id="065e-d406-9e4d-be61" name="Devastator Skills" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="065e-d406-9e4d-be61" name="Skills - Devastator" hidden="false" collective="false" import="true">
       <modifiers>
         <modifier type="increment" field="ac1e-1006-c8b0-1d1d" value="1.0">
           <repeats>
@@ -2028,15 +2185,15 @@ Alternatively, use as a standard Skill - as Level 2, but attack with five dice a
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
-    <selectionEntryGroup id="3e68-d642-e9d9-ae7c" name="Assassin Skills" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="3e68-d642-e9d9-ae7c" name="Skills - Assassin" hidden="false" collective="false" import="true">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="00f1-2d55-d811-98ff" type="equalTo"/>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c16-3fb6-5054-9f4b" type="equalTo"/>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="53ec-c2c0-3a35-00ab" type="equalTo"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="00f1-2d55-d811-98ff" type="equalTo"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3c16-3fb6-5054-9f4b" type="equalTo"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="53ec-c2c0-3a35-00ab" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
