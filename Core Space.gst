@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <gameSystem id="61f4-2341-ef0d-af6a" name="Core Space" revision="2" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+  <publications>
+    <publication id="8182-0163-9c18-ac91" name="Core Rulebook"/>
+    <publication id="0aa5-2bdb-f414-d5ae" name="Dangerous Days"/>
+  </publications>
   <costTypes>
     <costType id="b156-7aff-295b-3d4d" name=" Points" defaultCostLimit="-1.0" hidden="false"/>
   </costTypes>
@@ -56,6 +60,11 @@
         <characteristicType id="cbab-a029-e0b8-727d" name="Action"/>
       </characteristicTypes>
     </profileType>
+    <profileType id="93b2-e010-abe2-b912" name="Vocational Skills">
+      <characteristicTypes>
+        <characteristicType id="0126-aa67-a299-8d17" name="Action"/>
+      </characteristicTypes>
+    </profileType>
   </profileTypes>
   <categoryEntries>
     <categoryEntry id="9462-acb0-7d03-c785" name="Captain" hidden="false"/>
@@ -69,6 +78,11 @@
     <categoryEntry id="c3a8-3646-d0cf-bd42" name="Support" hidden="false"/>
     <categoryEntry id="b435-95cd-23f5-de37" name="Tech" hidden="false"/>
     <categoryEntry id="5341-d956-6797-80e9" name="Ship" hidden="false"/>
+    <categoryEntry id="c465-e61c-1a44-a35b" name="Scavenger" hidden="false"/>
+    <categoryEntry id="ebff-ea58-720c-968d" name="Engineer" hidden="false"/>
+    <categoryEntry id="a48f-30d1-0346-165b" name="Management" hidden="false"/>
+    <categoryEntry id="ecdd-6ad2-e374-617e" name="Scientist" hidden="false"/>
+    <categoryEntry id="6e0d-12ca-cfcc-7a87" name="Operations" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="e0ce-541b-d0f2-573b" name="Crew" hidden="false">
@@ -110,7 +124,7 @@
     </selectionEntry>
     <selectionEntry id="bc3b-10c5-c7e5-1e1a" name="Sure Shot - Level 2" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
-        <modifier type="set" field="4f0c-f8f6-6e7b-8aab" value="0">
+        <modifier type="set" field="4f0c-f8f6-6e7b-8aab" value="0.0">
           <conditions>
             <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="db05-9b2d-bf2b-df22" type="equalTo"/>
           </conditions>
@@ -228,7 +242,7 @@
     </selectionEntry>
     <selectionEntry id="ef4c-523e-e675-72a7" name="Marksman - Level 2" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
-        <modifier type="set" field="22d4-d98b-0710-fc3a" value="0">
+        <modifier type="set" field="22d4-d98b-0710-fc3a" value="0.0">
           <conditions>
             <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1a1c-58d6-aabb-119e" type="equalTo"/>
           </conditions>
@@ -2276,6 +2290,394 @@
         <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="e94e-6f81-c2e1-ce7a" name="Negotiation - Level 1" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b464-7de5-c6ea-580e" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="487d-fce8-96ea-7a27" name="Negotiation - Level 1" hidden="false" typeId="93b2-e010-abe2-b912" typeName="Vocational Skills">
+          <characteristics>
+            <characteristic name="Action" typeId="0126-aa67-a299-8d17">Passive: Re-roll one die on any Persuade Roll.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="81fb-0c6b-4229-7ac7" name="Negotiation - Level 2" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="126f-ef9a-ed31-4a77" value="0.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e94e-6f81-c2e1-ce7a" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="126f-ef9a-ed31-4a77" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="ce07-11fd-d117-3ce8" name="Negotiation - Level 2" hidden="false" typeId="93b2-e010-abe2-b912" typeName="Vocational Skills">
+          <characteristics>
+            <characteristic name="Action" typeId="0126-aa67-a299-8d17">Extraction Phase: Use before rolling on the &quot;You&apos;re on Your Own&quot; or Apprehended tables for yourself or any other member of your crew. You may ignore any UA cost associated with the extraction. Any other effects then apply. You then gain a Career Point.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3fe9-aa37-8f2b-7e40" name="Negotiation - Level 3" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="3843-65ef-f89c-0754" value="0.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="81fb-0c6b-4229-7ac7" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3843-65ef-f89c-0754" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="8bd6-70cc-37de-3e36" name="Negotiation - Level 3" hidden="false" typeId="93b2-e010-abe2-b912" typeName="Vocational Skills">
+          <characteristics>
+            <characteristic name="Action" typeId="0126-aa67-a299-8d17">Use this skill when an enemy Trader Captain is unengaged and in medium fange and LoS. Your crew and the other Captain&apos;s crew treat each other as friendly for the rest of the round - they cannot attack each other and can move through each other&apos;s Traders.
+
+In addition, pick one of your Traders. That Trader cannot attack or be attacked by the other crew until the next Hostility level is reached and can escape via the other crew&apos;s airlock during this time. The other crew will return your Trader at no cost after the game.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1b4c-ec03-044b-6c52" name="Barter - Level 1" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb56-3c0c-4dd7-e116" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="09d1-38ee-4af9-2c5e" name="Barter - Level 1" hidden="false" typeId="93b2-e010-abe2-b912" typeName="Vocational Skills">
+          <characteristics>
+            <characteristic name="Action" typeId="0126-aa67-a299-8d17">Trade Phase: You may perform one of the following:-
+- Re-roll a Ship Repair Cost roll.
+- Re-roll a Raw Blue sale cost roll.
+- Sell one item for its buy value, up to a maximum of 10UA.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2938-6026-7611-34ea" name="Barter - Level 2" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="5e63-b680-f91b-f038" value="0.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1b4c-ec03-044b-6c52" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e63-b680-f91b-f038" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="7c95-9113-e7f1-d6b6" name="Barter - Level 2" hidden="false" typeId="93b2-e010-abe2-b912" typeName="Vocational Skills">
+          <characteristics>
+            <characteristic name="Action" typeId="0126-aa67-a299-8d17">Trade Phase: Deduct up to 2UA from the buy prices, or add 2UA to the sale prices of up to 3 items, in any combination.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4fc6-66bd-dda1-2540" name="Barter - Level 3" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="fa28-535c-bbe4-4279" value="0.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4fc6-66bd-dda1-2540" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa28-535c-bbe4-4279" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="20d3-7625-378a-2ab6" name="Barter - Level 3" hidden="false" typeId="93b2-e010-abe2-b912" typeName="Vocational Skills">
+          <characteristics>
+            <characteristic name="Action" typeId="0126-aa67-a299-8d17">Passive: Deduct up to 2UA from the cost of an item, ship repair or crew bonus in each Trade Phase.
+
+Active: Increase the number of UA gained from any primary and secondary objectives (if applicable) by 50%, rounding up.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="605e-2799-3eeb-9085" name="Training - Level 1" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="65ff-5448-53b2-ceb7" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="de06-f3fc-b2d5-460a" name="Training - Level 1" hidden="false" typeId="93b2-e010-abe2-b912" typeName="Vocational Skills">
+          <characteristics>
+            <characteristic name="Action" typeId="0126-aa67-a299-8d17">Use after taking an action. Another Trader in your crew within short range and LoS immeditately makes the same action for free.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="e28e-c45e-44d1-7199" name="Training - Level 2" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="5193-3c53-e2b3-25b1" value="0.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="605e-2799-3eeb-9085" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5193-3c53-e2b3-25b1" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="440b-39d6-6043-a346" name="Training - Level 2" hidden="false" typeId="93b2-e010-abe2-b912" typeName="Vocational Skills">
+          <characteristics>
+            <characteristic name="Action" typeId="0126-aa67-a299-8d17">Advancement Phase: Add one Career Point to any other Trader in your crew (Level 1-2 only).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="b7ef-5a91-3150-d43d" name="Training - Level 3" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="2978-8559-3bb5-912f" value="0.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e28e-c45e-44d1-7199" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2978-8559-3bb5-912f" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="3c5e-172c-850d-35e7" name="Training - Level 3" hidden="false" typeId="93b2-e010-abe2-b912" typeName="Vocational Skills">
+          <characteristics>
+            <characteristic name="Action" typeId="0126-aa67-a299-8d17">Advancement Phase: Add one Career Point to any two Traders in your crew. One can be at any level; the other is level 1-2 only.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="93a0-d7d9-49a0-2f51" name="Engineering - Level 1" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4705-2e9a-aead-ef6a" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="0007-d4aa-4828-245c" name="Engineering - Level 1" hidden="false" typeId="93b2-e010-abe2-b912" typeName="Vocational Skills">
+          <characteristics>
+            <characteristic name="Action" typeId="0126-aa67-a299-8d17">Make a Repair action. Do not roll - apply up to two Repair Points automatically. Additional Repair Points may be applied by spending additional actions.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="c77c-5a50-d8ae-9261" name="Engineering - Level 2" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="0fef-7c77-e3d7-9b97" value="0.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="93a0-d7d9-49a0-2f51" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0fef-7c77-e3d7-9b97" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="3635-d1df-7115-55bc" name="Engineering - Level 2" hidden="false" typeId="93b2-e010-abe2-b912" typeName="Vocational Skills">
+          <characteristics>
+            <characteristic name="Action" typeId="0126-aa67-a299-8d17">Passive: Up to one Ship Repair can be madeeach game without visiting the Scrap Merchant, although youi must pay for parts as normal.
+
+Maintenance Phase: Use this skill to re-roll a Degradation result.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="f20c-e7d7-d8ad-318d" name="Engineering - Level 3" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="69d6-a3b0-c166-70a3" value="0.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c77c-5a50-d8ae-9261" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69d6-a3b0-c166-70a3" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="f287-d28b-f5a1-8b67" name="Engineering - Level 3" hidden="false" typeId="93b2-e010-abe2-b912" typeName="Vocational Skills">
+          <characteristics>
+            <characteristic name="Action" typeId="0126-aa67-a299-8d17">Maintainance Phase: Use this skill to either:
+- Cancel a Degradation roll before rolling.
+- Apply a ship upgrade (following all the usual rules and costs) while your ship is not fully repaired.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="444f-0009-ff47-a293" name="Slippery - Level 1" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="394b-4464-5dbb-b21d" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="fcf2-c530-f915-6322" name="Slippery - Level 1" hidden="false" typeId="93b2-e010-abe2-b912" typeName="Vocational Skills">
+          <characteristics>
+            <characteristic name="Action" typeId="0126-aa67-a299-8d17">Make a Move action with Climb 2/Jump Down 2.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="12d5-57a1-62e9-a3c5" name="Slippery - Level 2" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="2914-023d-77d6-b8fe" value="0.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="444f-0009-ff47-a293" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2914-023d-77d6-b8fe" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="02ee-6e96-90f5-52c5" name="Slippery - Level 2" hidden="false" typeId="93b2-e010-abe2-b912" typeName="Vocational Skills">
+          <characteristics>
+            <characteristic name="Action" typeId="0126-aa67-a299-8d17">Passive: You may use an effortless action to ignore an attack of opportunity. 
+
+This skill may be use when the Trader is Apprehended to remove the Apprehended Board and restore one point of Health.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="a838-90ec-c35e-3785" name="Slippery - Level 3" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="59ab-3ddd-bd4f-c304" value="0.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="12d5-57a1-62e9-a3c5" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="59ab-3ddd-bd4f-c304" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="b7b0-a684-7f6e-e38c" name="Slippery - Level 3" hidden="false" typeId="93b2-e010-abe2-b912" typeName="Vocational Skills">
+          <characteristics>
+            <characteristic name="Action" typeId="0126-aa67-a299-8d17">Make a Move action. This and all of your other Move actions in this turn ignore attacks of opportunity. Make an attack with one die against each enemy contacted during your moves. Any hits will also knock them prone, even if no damage is caused.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="1947-6766-b211-941b" name="Hack and Grab - Level 1" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f1a-051c-22c6-a47c" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="9193-5b82-f300-5cc7" name="Hack and Grab - Level 1" hidden="false" typeId="93b2-e010-abe2-b912" typeName="Vocational Skills">
+          <characteristics>
+            <characteristic name="Action" typeId="0126-aa67-a299-8d17">Make any two of the following actions, in any order, before, after, or between your other actions this turn:
+- Move
+- Unlock and open a door or crate within short range.
+- Lock and close a door or crate within short range (may be the same one)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="aead-f6b9-2a5b-a8b5" name="Hack and Grab - Level 2" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="f704-5ba1-568f-be63" value="0.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1947-6766-b211-941b" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f704-5ba1-568f-be63" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="6d5d-50ef-4c14-18f5" name="Hack and Grab - Level 2" hidden="false" typeId="93b2-e010-abe2-b912" typeName="Vocational Skills">
+          <characteristics>
+            <characteristic name="Action" typeId="0126-aa67-a299-8d17">Make a Move action into base contact with another character, and roll a die to attempt to pickpocket them as follows:
+- (!): You fail. There is no effect.
+- Blank: One of the target&apos;s items, chosen at random, is scattered.
+- One Hit: Take a small item of your choice from the target.
+- Two Hits: Take any item of your choice from the target and knock them prone.
+Then make another Move action, with no attack of opportunity.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="e522-de77-aeea-e215" name="Hack and Grab - Level 3" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="9c8c-7fcd-00a9-4c31" value="0.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="aead-f6b9-2a5b-a8b5" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c8c-7fcd-00a9-4c31" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="dbee-c3b9-a018-9d7f" name="Hack and Grab - Level 3" hidden="false" typeId="93b2-e010-abe2-b912" typeName="Vocational Skills">
+          <characteristics>
+            <characteristic name="Action" typeId="0126-aa67-a299-8d17">You may use a homemade miniaturised poral device to inspect the contents of any crate within medium range. Then roll a combat die:
+- (!): Return all items.
+- Blank: Take or swap a small item of your choice.
+- One Hit: Take or swap any item of your choice.
+- Two Hits: Take or swap all items, and distribute them between your own equipment tray and your ship&apos;s hold.
+You may then lock the crate if you wish.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="a647-a705-5ef1-169f" name="Scientific Mind - Level 1" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2df0-744c-2e1d-c6aa" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="68f3-4a08-0929-b296" name="Scientific Mind - Level 1" publicationId="0aa5-2bdb-f414-d5ae" page="93" hidden="false" typeId="93b2-e010-abe2-b912" typeName="Vocational Skills">
+          <characteristics>
+            <characteristic name="Action" typeId="0126-aa67-a299-8d17">Use either of the following:
+
+Reaction: Use this when another Trader in the same room neutralises an Infestation to place a Reminder Counter in the room. In the following Assessment Phase, this room cannot be chosen as the one to spread the infestation, and if an infestation would be placed in this room this round nothing will happen. See Infestations on page 19.
+
+Reaction: Use when a Rogue Purge NPC in LoS gains one or more pegs. Add one black peg to your own Skill Track. This may be used as described on page 14.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="e696-0ebc-2f56-6a2e" name="Scientific Mind - Level 2" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="994f-7338-5f95-8171" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="91af-0201-6079-cd29" name="Scientific Mind - Level 2" publicationId="0aa5-2bdb-f414-d5ae" page="93" hidden="false" typeId="93b2-e010-abe2-b912" typeName="Vocational Skills">
+          <characteristics>
+            <characteristic name="Action" typeId="0126-aa67-a299-8d17">Passive: If this Trader is in the room when infection rolls are made to damge friendly Traders, the Traders may re-roll the dice. See Infestations on page 19.
+
+Reaction: Use when retrieving Rogue Purge remains to add up to two pegs to the collected AI chip, up to the character&apos;s maximum.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="03e1-d2bc-0906-94f0" name="Scientific Mind - Level 3" page="" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="07d1-63bf-8fa4-cbd7" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="d9d9-9fe6-5145-2241" name="Scientific Mind - Level 3" publicationId="0aa5-2bdb-f414-d5ae" page="93" hidden="false" typeId="93b2-e010-abe2-b912" typeName="Vocational Skills">
+          <characteristics>
+            <characteristic name="Action" typeId="0126-aa67-a299-8d17">Passive: This Trader may neutralise Infestations as an effortless action.
+
+Reaction: Use after defeating a Purge character in Close Assault to take a Raw Blue token.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="0bde-6bbd-d2e7-e42d" name="Class" hidden="false" collective="false" import="true">
@@ -2342,7 +2744,7 @@
         </selectionEntry>
         <selectionEntry id="80a4-455e-2584-9c34" name="Merg" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="set" field="3bf6-e893-643f-1097" value="1">
+            <modifier type="set" field="3bf6-e893-643f-1097" value="1.0">
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2d81-35b3-3780-3d43" type="instanceOf"/>
               </conditions>
@@ -2375,6 +2777,46 @@
         <selectionEntry id="19a3-b8b3-a35a-6a5b" name="Soldier" hidden="false" collective="false" import="true" type="upgrade">
           <categoryLinks>
             <categoryLink id="8cba-63d1-e7e1-7219" name="Soldier" hidden="false" targetId="c253-0c50-c981-1e59" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="feec-fc8e-9e67-26c8" name="Operations" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="9e9c-80fb-6b3c-031e" name="Operations" hidden="false" targetId="6e0d-12ca-cfcc-7a87" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="3f4c-0cdd-0711-143a" name="Management" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="16e6-c449-5da7-699f" name="Management" hidden="false" targetId="a48f-30d1-0346-165b" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="a7d6-a0f8-5865-57ab" name="Scavenger" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="a903-862d-0f9f-42e3" name="Scavenger" hidden="false" targetId="c465-e61c-1a44-a35b" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="1371-347c-e257-922d" name="Scientist" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="fcb6-925a-e8b5-d6a1" name="Scientist" hidden="false" targetId="ecdd-6ad2-e374-617e" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="b85e-4de1-eec2-83c3" name="Engineer" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="1f1b-c892-430d-e0f6" name="Engineer" hidden="false" targetId="ebff-ea58-720c-968d" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name=" Points" typeId="b156-7aff-295b-3d4d" value="0.0"/>
@@ -2423,6 +2865,11 @@
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b435-95cd-23f5-de37" type="equalTo"/>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2d0a-48f2-527a-2776" type="equalTo"/>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ecdc-135b-ec82-aa01" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c465-e61c-1a44-a35b" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ecdd-6ad2-e374-617e" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a48f-30d1-0346-165b" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6e0d-12ca-cfcc-7a87" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ebff-ea58-720c-968d" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2438,8 +2885,12 @@
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2d81-35b3-3780-3d43" type="equalTo"/>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a263-9148-81b0-815a" type="equalTo"/>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b435-95cd-23f5-de37" type="equalTo"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2d0a-48f2-527a-2776" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ebff-ea58-720c-968d" type="equalTo"/>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ecdc-135b-ec82-aa01" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ecdd-6ad2-e374-617e" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2d0a-48f2-527a-2776" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6e0d-12ca-cfcc-7a87" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a48f-30d1-0346-165b" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2455,6 +2906,8 @@
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c253-0c50-c981-1e59" type="equalTo"/>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c3a8-3646-d0cf-bd42" type="equalTo"/>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ecdc-135b-ec82-aa01" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6e0d-12ca-cfcc-7a87" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ebff-ea58-720c-968d" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2470,6 +2923,10 @@
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="44bd-774a-f9c0-c6ab" type="equalTo"/>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b435-95cd-23f5-de37" type="equalTo"/>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ecdc-135b-ec82-aa01" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c465-e61c-1a44-a35b" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ecdd-6ad2-e374-617e" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a48f-30d1-0346-165b" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ebff-ea58-720c-968d" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2487,6 +2944,8 @@
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c3a8-3646-d0cf-bd42" type="equalTo"/>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2d0a-48f2-527a-2776" type="equalTo"/>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ecdc-135b-ec82-aa01" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ecdd-6ad2-e374-617e" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ebff-ea58-720c-968d" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2503,6 +2962,7 @@
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2d81-35b3-3780-3d43" type="equalTo"/>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="44bd-774a-f9c0-c6ab" type="equalTo"/>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ecdc-135b-ec82-aa01" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a48f-30d1-0346-165b" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2527,9 +2987,14 @@
         <entryLink id="cc0f-33ef-f7b1-d1f9" name="Machine Skills" hidden="false" collective="false" import="true" targetId="fc4e-72f3-5374-ef58" type="selectionEntryGroup">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ecdc-135b-ec82-aa01" type="equalTo"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ecdd-6ad2-e374-617e" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ecdc-135b-ec82-aa01" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </entryLink>
@@ -2539,6 +3004,23 @@
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d81-35b3-3780-3d43" type="equalTo"/>
               </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="c558-00ec-b090-9ccd" name="Vocational Skills" hidden="false" collective="false" import="true" targetId="bf8a-52b1-3758-d64c" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c465-e61c-1a44-a35b" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6e0d-12ca-cfcc-7a87" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ebff-ea58-720c-968d" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a48f-30d1-0346-165b" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ecdd-6ad2-e374-617e" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </entryLink>
@@ -2633,6 +3115,7 @@
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="44bd-774a-f9c0-c6ab" type="equalTo"/>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c3a8-3646-d0cf-bd42" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c465-e61c-1a44-a35b" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2660,6 +3143,7 @@
                 <conditionGroup type="or">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="44bd-774a-f9c0-c6ab" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c465-e61c-1a44-a35b" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2674,6 +3158,7 @@
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c253-0c50-c981-1e59" type="equalTo"/>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c3a8-3646-d0cf-bd42" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c465-e61c-1a44-a35b" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2692,8 +3177,24 @@
     <selectionEntryGroup id="1158-940c-45d4-4e9e" name="Combat Expert" hidden="false" collective="false" import="true">
       <entryLinks>
         <entryLink id="2253-7be4-3817-482b" name="Combat Expert - Level 1" hidden="false" collective="false" import="true" targetId="2175-8cd8-5183-a698" type="selectionEntry"/>
-        <entryLink id="7628-aad9-112a-7800" name="Combat Expert - Level 2" hidden="false" collective="false" import="true" targetId="3b66-b4f8-395f-1da2" type="selectionEntry"/>
-        <entryLink id="dbf0-fafc-83fb-f6c4" name="Combat Expert - Level 3" hidden="false" collective="false" import="true" targetId="a3ea-3082-1d68-84c6" type="selectionEntry"/>
+        <entryLink id="7628-aad9-112a-7800" name="Combat Expert - Level 2" hidden="false" collective="false" import="true" targetId="3b66-b4f8-395f-1da2" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c465-e61c-1a44-a35b" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="dbf0-fafc-83fb-f6c4" name="Combat Expert - Level 3" hidden="false" collective="false" import="true" targetId="a3ea-3082-1d68-84c6" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c465-e61c-1a44-a35b" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="4c14-86e0-36c6-6c81" name="Stealth Skills" hidden="false" collective="false" import="true">
@@ -2706,6 +3207,9 @@
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b435-95cd-23f5-de37" type="equalTo"/>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2d0a-48f2-527a-2776" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c465-e61c-1a44-a35b" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ecdd-6ad2-e374-617e" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a48f-30d1-0346-165b" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2722,6 +3226,8 @@
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2d81-35b3-3780-3d43" type="equalTo"/>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b435-95cd-23f5-de37" type="equalTo"/>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2d0a-48f2-527a-2776" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c465-e61c-1a44-a35b" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ecdd-6ad2-e374-617e" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2737,6 +3243,8 @@
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="44bd-774a-f9c0-c6ab" type="equalTo"/>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a263-9148-81b0-815a" type="equalTo"/>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2d81-35b3-3780-3d43" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c465-e61c-1a44-a35b" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a48f-30d1-0346-165b" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2753,6 +3261,8 @@
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="44bd-774a-f9c0-c6ab" type="equalTo"/>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2d81-35b3-3780-3d43" type="equalTo"/>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2d0a-48f2-527a-2776" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ecdd-6ad2-e374-617e" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a48f-30d1-0346-165b" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2815,6 +3325,7 @@
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c253-0c50-c981-1e59" type="equalTo"/>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d81-35b3-3780-3d43" type="equalTo"/>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2d0a-48f2-527a-2776" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6e0d-12ca-cfcc-7a87" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2830,6 +3341,7 @@
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="44bd-774a-f9c0-c6ab" type="equalTo"/>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a263-9148-81b0-815a" type="equalTo"/>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2d0a-48f2-527a-2776" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6e0d-12ca-cfcc-7a87" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2862,6 +3374,7 @@
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a263-9148-81b0-815a" type="equalTo"/>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d81-35b3-3780-3d43" type="equalTo"/>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2d0a-48f2-527a-2776" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6e0d-12ca-cfcc-7a87" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2895,7 +3408,15 @@
       <entryLinks>
         <entryLink id="257d-f95e-0384-5865" name="Impervious - Level 1" hidden="false" collective="false" import="true" targetId="d3bf-e9cc-7700-6977" type="selectionEntry"/>
         <entryLink id="bdc9-0ba9-9c5e-ebef" name="Impervious - Level 2" hidden="false" collective="false" import="true" targetId="e5f5-cd08-5770-3a8a" type="selectionEntry"/>
-        <entryLink id="6d5d-3a7a-4038-8d62" name="Impervious - Level 3" hidden="false" collective="false" import="true" targetId="2a37-ee9b-4759-d3f4" type="selectionEntry"/>
+        <entryLink id="6d5d-3a7a-4038-8d62" name="Impervious - Level 3" hidden="false" collective="false" import="true" targetId="2a37-ee9b-4759-d3f4" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6e0d-12ca-cfcc-7a87" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="c5ee-2e42-81fb-6c86" name="Cunning Skills" hidden="false" collective="false" import="true">
@@ -2908,6 +3429,8 @@
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="44bd-774a-f9c0-c6ab" type="equalTo"/>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a263-9148-81b0-815a" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c465-e61c-1a44-a35b" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6e0d-12ca-cfcc-7a87" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2921,6 +3444,7 @@
                 <conditionGroup type="or">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b435-95cd-23f5-de37" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6e0d-12ca-cfcc-7a87" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2935,6 +3459,9 @@
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="44bd-774a-f9c0-c6ab" type="equalTo"/>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b435-95cd-23f5-de37" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c465-e61c-1a44-a35b" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a48f-30d1-0346-165b" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6e0d-12ca-cfcc-7a87" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2949,6 +3476,8 @@
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="44bd-774a-f9c0-c6ab" type="equalTo"/>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b435-95cd-23f5-de37" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c465-e61c-1a44-a35b" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a48f-30d1-0346-165b" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2968,7 +3497,15 @@
       <entryLinks>
         <entryLink id="5286-85de-0f62-481f" name="Evade - Level 1" hidden="false" collective="false" import="true" targetId="f002-7b30-4f96-b8ee" type="selectionEntry"/>
         <entryLink id="6ffe-b26e-b361-5485" name="Evade - Level 2" hidden="false" collective="false" import="true" targetId="8385-3abe-c000-b018" type="selectionEntry"/>
-        <entryLink id="9edd-ffe8-2add-8bad" name="Evade - Level 3" hidden="false" collective="false" import="true" targetId="fcc7-9677-4efc-fcad" type="selectionEntry"/>
+        <entryLink id="9edd-ffe8-2add-8bad" name="Evade - Level 3" hidden="false" collective="false" import="true" targetId="fcc7-9677-4efc-fcad" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a48f-30d1-0346-165b" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="9df2-a677-43eb-6ac8" name="Light Fingers" hidden="false" collective="false" import="true">
@@ -2986,8 +3523,8 @@
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="2d83-0c67-48ac-ce59" name="Tech Skills" hidden="false" collective="false" import="true">
-      <entryLinks>
-        <entryLink id="6a63-5478-da5b-278d" name="Assist" hidden="false" collective="false" import="true" targetId="a950-ac0f-fa90-4132" type="selectionEntryGroup">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="e109-4487-4e7c-9427" name="Assist" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -2995,13 +3532,29 @@
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a263-9148-81b0-815a" type="equalTo"/>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c3a8-3646-d0cf-bd42" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c465-e61c-1a44-a35b" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ecdd-6ad2-e374-617e" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6e0d-12ca-cfcc-7a87" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
-        </entryLink>
-        <entryLink id="7f7c-5688-5d46-9afd" name="Disrupt" hidden="false" collective="false" import="true" targetId="303b-bafe-db65-e645" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="fdf2-e392-ba35-a416" name="Assist - Level 1" hidden="false" collective="false" import="true" targetId="d5c0-9064-c841-8d0f" type="selectionEntry"/>
+            <entryLink id="3d83-b1a3-a7e6-9607" name="Assist - Level 2" hidden="false" collective="false" import="true" targetId="0d56-3ed0-b8a6-592c" type="selectionEntry"/>
+            <entryLink id="dbbd-c08c-9dad-ae68" name="Assist - Level 3" hidden="false" collective="false" import="true" targetId="8d11-7afd-25d0-231c" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ebff-ea58-720c-968d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="7ada-c69b-691a-97a8" name="Disrupt" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -3010,27 +3563,33 @@
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a263-9148-81b0-815a" type="equalTo"/>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c3a8-3646-d0cf-bd42" type="equalTo"/>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2d0a-48f2-527a-2776" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6e0d-12ca-cfcc-7a87" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ebff-ea58-720c-968d" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
-        </entryLink>
-        <entryLink id="869a-6581-516d-d0f9" name="Regulate" hidden="false" collective="false" import="true" targetId="6f10-b442-55d2-3140" type="selectionEntryGroup">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a263-9148-81b0-815a" type="equalTo"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2d0a-48f2-527a-2776" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink id="8940-65eb-b120-675f" name="Hack" hidden="false" collective="false" import="true" targetId="64ff-2398-8a7f-d617" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="40b8-3a7f-3234-0e91" name="Disrupt - Level 1" hidden="false" collective="false" import="true" targetId="e594-0d67-8239-a702" type="selectionEntry"/>
+            <entryLink id="4056-c34c-ddcd-f9ed" name="Disrupt - Level 2" hidden="false" collective="false" import="true" targetId="9a69-9454-13b2-180a" type="selectionEntry"/>
+            <entryLink id="c373-bf8a-365f-0eee" name="Disrupt - Level 3" hidden="false" collective="false" import="true" targetId="fbc2-21eb-5f55-3cc0" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ecdd-6ad2-e374-617e" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c465-e61c-1a44-a35b" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="648b-be93-e2ba-8803" name="Hack" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -3038,44 +3597,43 @@
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c3a8-3646-d0cf-bd42" type="equalTo"/>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2d0a-48f2-527a-2776" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c465-e61c-1a44-a35b" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ecdd-6ad2-e374-617e" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ebff-ea58-720c-968d" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
-        </entryLink>
-      </entryLinks>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="303b-bafe-db65-e645" name="Disrupt" hidden="false" collective="false" import="true">
-      <entryLinks>
-        <entryLink id="e8ae-8bb8-9c15-05f5" name="Disrupt - Level 1" hidden="false" collective="false" import="true" targetId="e594-0d67-8239-a702" type="selectionEntry"/>
-        <entryLink id="13f7-af79-8308-93aa" name="Disrupt - Level 2" hidden="false" collective="false" import="true" targetId="9a69-9454-13b2-180a" type="selectionEntry"/>
-        <entryLink id="d25e-1910-2c62-5777" name="Disrupt - Level 3" hidden="false" collective="false" import="true" targetId="fbc2-21eb-5f55-3cc0" type="selectionEntry"/>
-      </entryLinks>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="a950-ac0f-fa90-4132" name="Assist" hidden="false" collective="false" import="true">
-      <entryLinks>
-        <entryLink id="b0d8-c0c9-df38-a222" name="Assist - Level 1" hidden="false" collective="false" import="true" targetId="d5c0-9064-c841-8d0f" type="selectionEntry"/>
-        <entryLink id="e737-d795-4b41-5c7a" name="Assist - Level 2" hidden="false" collective="false" import="true" targetId="0d56-3ed0-b8a6-592c" type="selectionEntry"/>
-        <entryLink id="8ff9-fc02-ecbe-1c04" name="Assist - Level 3" hidden="false" collective="false" import="true" targetId="8d11-7afd-25d0-231c" type="selectionEntry"/>
-      </entryLinks>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="6f10-b442-55d2-3140" name="Regulate" hidden="false" collective="false" import="true">
-      <entryLinks>
-        <entryLink id="cc55-25f9-4713-bbb4" name="Regulate - Level 1" hidden="false" collective="false" import="true" targetId="df38-3154-902a-d454" type="selectionEntry"/>
-        <entryLink id="8554-53db-e203-1853" name="Regulate - Level 2" hidden="false" collective="false" import="true" targetId="fbdb-614e-72cf-f357" type="selectionEntry"/>
-        <entryLink id="4365-0687-7492-9349" name="Regulate - Level 3" hidden="false" collective="false" import="true" targetId="2304-3c59-3c86-30fc" type="selectionEntry"/>
-      </entryLinks>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="64ff-2398-8a7f-d617" name="Hack" hidden="false" collective="false" import="true">
-      <constraints>
-        <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e02-6550-080c-294f" type="max"/>
-      </constraints>
-      <entryLinks>
-        <entryLink id="e152-8f8d-1088-5a7e" name="Hack - Level 1" hidden="false" collective="false" import="true" targetId="37e7-0f1b-90e5-5b9d" type="selectionEntry"/>
-        <entryLink id="0386-a112-f2f1-0eeb" name="Hack - Level 2" hidden="false" collective="false" import="true" targetId="15eb-59db-8fbe-79a1" type="selectionEntry"/>
-        <entryLink id="9b63-e4d5-c550-ac5c" name="Hack - Level 3" hidden="false" collective="false" import="true" targetId="b6ea-1e07-3abd-2e2e" type="selectionEntry"/>
-      </entryLinks>
+          <entryLinks>
+            <entryLink id="7e5e-a1a2-d0d6-2e25" name="Hack - Level 2" hidden="false" collective="false" import="true" targetId="15eb-59db-8fbe-79a1" type="selectionEntry"/>
+            <entryLink id="3d1b-847f-e029-d280" name="Hack - Level 3" hidden="false" collective="false" import="true" targetId="b6ea-1e07-3abd-2e2e" type="selectionEntry"/>
+            <entryLink id="0dec-823d-8359-4534" name="Hack - Level 1" hidden="false" collective="false" import="true" targetId="37e7-0f1b-90e5-5b9d" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="a402-71ba-608b-566c" name="Regulate" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a263-9148-81b0-815a" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2d0a-48f2-527a-2776" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c465-e61c-1a44-a35b" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ecdd-6ad2-e374-617e" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6e0d-12ca-cfcc-7a87" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <entryLinks>
+            <entryLink id="7919-6502-22dd-9192" name="Regulate - Level 2" hidden="false" collective="false" import="true" targetId="fbdb-614e-72cf-f357" type="selectionEntry"/>
+            <entryLink id="2013-2658-07ac-347c" name="Regulate - Level 1" hidden="false" collective="false" import="true" targetId="df38-3154-902a-d454" type="selectionEntry"/>
+            <entryLink id="7612-7d1e-a17a-82f3" name="Regulate - Level 3" hidden="false" collective="false" import="true" targetId="2304-3c59-3c86-30fc" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntryGroup>
     <selectionEntryGroup id="9953-b82d-4c60-a014" name="Augmented Skills" hidden="false" collective="false" import="true">
       <entryLinks>
@@ -3189,11 +3747,43 @@
     </selectionEntryGroup>
     <selectionEntryGroup id="fc4e-72f3-5374-ef58" name="Machine Skills" hidden="false" collective="false" import="true">
       <entryLinks>
-        <entryLink id="bfd0-5672-a1d5-bc3d" name="Reroute" hidden="false" collective="false" import="true" targetId="3802-9a3e-3c1b-84e5" type="selectionEntryGroup"/>
+        <entryLink id="bfd0-5672-a1d5-bc3d" name="Reroute" hidden="false" collective="false" import="true" targetId="3802-9a3e-3c1b-84e5" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ecdd-6ad2-e374-617e" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
         <entryLink id="2acc-96d3-c067-eed0" name="Scanners" hidden="false" collective="false" import="true" targetId="14ba-c51f-f263-0397" type="selectionEntryGroup"/>
-        <entryLink id="8f67-3384-e856-4b92" name="Bodyguard Protocol" hidden="false" collective="false" import="true" targetId="dba9-daae-74b6-9d69" type="selectionEntryGroup"/>
-        <entryLink id="732e-8f51-ace5-dfea" name="Repair" hidden="false" collective="false" import="true" targetId="8fad-4cc0-0c25-7efb" type="selectionEntryGroup"/>
-        <entryLink id="8b5a-d7e0-15a7-407f" name="Overdrive" hidden="false" collective="false" import="true" targetId="439b-6b1e-774b-5ef5" type="selectionEntryGroup"/>
+        <entryLink id="8f67-3384-e856-4b92" name="Bodyguard Protocol" hidden="false" collective="false" import="true" targetId="dba9-daae-74b6-9d69" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ecdd-6ad2-e374-617e" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="732e-8f51-ace5-dfea" name="Repair" hidden="false" collective="false" import="true" targetId="8fad-4cc0-0c25-7efb" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ecdd-6ad2-e374-617e" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="8b5a-d7e0-15a7-407f" name="Overdrive" hidden="false" collective="false" import="true" targetId="439b-6b1e-774b-5ef5" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ecdd-6ad2-e374-617e" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="485f-cb98-89ce-3152" name="Merg Skills" hidden="false" collective="false" import="true">
@@ -3263,6 +3853,145 @@
         <entryLink id="7be1-1f48-2fe7-e8a3" name="Sonic Roar - Level 1" hidden="false" collective="false" import="true" targetId="ab05-2c4e-0869-5184" type="selectionEntry"/>
         <entryLink id="d5b4-72c6-9c82-eb02" name="Sonic Roar - Level 2" hidden="false" collective="false" import="true" targetId="729f-6dbd-a0c3-5de3" type="selectionEntry"/>
       </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="9897-7c44-f839-0d80" name="Training" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="3c80-80dc-4d04-c1d1" name="Training - Level 2" hidden="false" collective="false" import="true" targetId="e28e-c45e-44d1-7199" type="selectionEntry"/>
+        <entryLink id="be28-9b9d-483c-3e0a" name="Training - Level 1" hidden="false" collective="false" import="true" targetId="605e-2799-3eeb-9085" type="selectionEntry"/>
+        <entryLink id="2585-6b2a-26c2-32f6" name="Training - Level 3" hidden="false" collective="false" import="true" targetId="b7ef-5a91-3150-d43d" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="bf8a-52b1-3758-d64c" name="Vocational Skills" hidden="false" collective="false" import="true">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="f12b-e964-d4fe-8d23" name="Barter" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c465-e61c-1a44-a35b" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <entryLinks>
+            <entryLink id="df70-516a-1281-2e68" name="Barter - Level 2" hidden="false" collective="false" import="true" targetId="2938-6026-7611-34ea" type="selectionEntry"/>
+            <entryLink id="5079-9874-56fe-1944" name="Barter - Level 1" hidden="false" collective="false" import="true" targetId="1b4c-ec03-044b-6c52" type="selectionEntry"/>
+            <entryLink id="69d5-b590-68e2-0100" name="Barter - Level 3" hidden="false" collective="false" import="true" targetId="4fc6-66bd-dda1-2540" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="a67e-e7c2-256a-3af9" name="Training" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6e0d-12ca-cfcc-7a87" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ebff-ea58-720c-968d" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a48f-30d1-0346-165b" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <entryLinks>
+            <entryLink id="d4f7-1533-6878-d317" name="Training - Level 2" hidden="false" collective="false" import="true" targetId="e28e-c45e-44d1-7199" type="selectionEntry"/>
+            <entryLink id="3863-373f-5af3-3d36" name="Training - Level 3" hidden="false" collective="false" import="true" targetId="b7ef-5a91-3150-d43d" type="selectionEntry"/>
+            <entryLink id="b4be-e246-66de-a670" name="Training - Level 1" hidden="false" collective="false" import="true" targetId="605e-2799-3eeb-9085" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="0654-1b62-9981-c5db" name="Negotiation" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6e0d-12ca-cfcc-7a87" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a48f-30d1-0346-165b" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <entryLinks>
+            <entryLink id="8974-08b8-97a5-ef4a" name="Negotiation - Level 3" hidden="false" collective="false" import="true" targetId="3fe9-aa37-8f2b-7e40" type="selectionEntry"/>
+            <entryLink id="28bf-68df-c6dd-2aea" name="Negotiation - Level 2" hidden="false" collective="false" import="true" targetId="81fb-0c6b-4229-7ac7" type="selectionEntry"/>
+            <entryLink id="79c5-9567-16f2-8fd2" name="Negotiation - Level 1" hidden="false" collective="false" import="true" targetId="e94e-6f81-c2e1-ce7a" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="6c19-3a8d-1760-11ed" name="Engineering" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ebff-ea58-720c-968d" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c465-e61c-1a44-a35b" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ecdd-6ad2-e374-617e" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <entryLinks>
+            <entryLink id="fe31-cba8-cbd1-84ff" name="Engineering - Level 2" hidden="false" collective="false" import="true" targetId="c77c-5a50-d8ae-9261" type="selectionEntry"/>
+            <entryLink id="2c48-e75d-92f1-ff4d" name="Engineering - Level 1" hidden="false" collective="false" import="true" targetId="93a0-d7d9-49a0-2f51" type="selectionEntry"/>
+            <entryLink id="3f96-a198-9b89-f377" name="Engineering - Level 3" hidden="false" collective="false" import="true" targetId="f20c-e7d7-d8ad-318d" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="9d8e-7438-d467-35b6" name="Slippery" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c465-e61c-1a44-a35b" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <entryLinks>
+            <entryLink id="697c-0276-7323-17e3" name="Slippery - Level 2" hidden="false" collective="false" import="true" targetId="12d5-57a1-62e9-a3c5" type="selectionEntry"/>
+            <entryLink id="5cb6-d2c1-1ef1-0234" name="Slippery - Level 1" hidden="false" collective="false" import="true" targetId="444f-0009-ff47-a293" type="selectionEntry"/>
+            <entryLink id="9556-0c35-3385-02f3" name="Slippery - Level 3" hidden="false" collective="false" import="true" targetId="a838-90ec-c35e-3785" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="c1c6-f04b-00c4-9e99" name="Hack and Grab" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c465-e61c-1a44-a35b" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <entryLinks>
+            <entryLink id="aa6c-392b-bf15-4649" name="Hack and Grab - Level 2" hidden="false" collective="false" import="true" targetId="aead-f6b9-2a5b-a8b5" type="selectionEntry"/>
+            <entryLink id="dda9-be21-c50c-1c32" name="Hack and Grab - Level 1" hidden="false" collective="false" import="true" targetId="1947-6766-b211-941b" type="selectionEntry"/>
+            <entryLink id="eb6e-6031-b5a1-2cb7" name="Hack and Grab - Level 3" hidden="false" collective="false" import="true" targetId="e522-de77-aeea-e215" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="d99c-9d31-1ea9-56c4" name="Scientific Mind" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ebff-ea58-720c-968d" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ecdd-6ad2-e374-617e" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <entryLinks>
+            <entryLink id="668b-a903-4423-01a1" name="Scientific Mind - Level 2" hidden="false" collective="false" import="true" targetId="e696-0ebc-2f56-6a2e" type="selectionEntry"/>
+            <entryLink id="29fe-3d4e-49a6-67c4" name="Scientific Mind - Level 3" hidden="false" collective="false" import="true" targetId="03e1-d2bc-0906-94f0" type="selectionEntry"/>
+            <entryLink id="1792-f650-d795-1023" name="Scientific Mind - Level 1" hidden="false" collective="false" import="true" targetId="a647-a705-5ef1-169f" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
 </gameSystem>
