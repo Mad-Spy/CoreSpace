@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<dataIndex battleScribeVersion="2.03" name="Core Space" indexUrl="https://raw.githubusercontent.com/Mad-Spy/CoreSpace/blob/master/Package/index.bsi" xmlns="http://www.battlescribe.net/schema/dataIndexSchema">
+<dataIndex battleScribeVersion="2.03" name="Core Space" indexUrl="https://raw.githubusercontent.com/Mad-Spy/CoreSpace/master/Package/index.bsi" xmlns="http://www.battlescribe.net/schema/dataIndexSchema">
   <dataIndexEntries>
     <dataIndexEntry filePath="Core Space.gstz" dataType="gamesystem" dataId="61f4-2341-ef0d-af6a" dataName="Core Space" dataBattleScribeVersion="2.03" dataRevision="2"/>
     <dataIndexEntry filePath="Rogue Purge.catz" dataType="catalogue" dataId="9506-533e-b902-d63a" dataName="Rogue Purge" dataBattleScribeVersion="2.03" dataRevision="1"/>
